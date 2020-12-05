@@ -1,0 +1,2963 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    
+
+    <meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//vcdn.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//icdn.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//cdnweb.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//cdndulich.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//cdnduhoc.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//cdnmobile.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//webapi.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//captcha.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//comment.dantri.com.vn"/>
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+<link rel="dns-prefetch" href="//cdn.jwplayer.com"/>
+<link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+<link rel="dns-prefetch" href="//media1.admicro.vn"/>
+<link rel="dns-prefetch" href="//logsbin.dantri.com.vn"/>
+<link rel="dns-prefetch" href="//www.google-analytics.com"/>
+<link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+
+    <script>
+    window.wDataLayer = {"platform":"web","page_type":"cate","item_id":null,"cate_id":"36","tags":[],"cate_name":"","cate_list":null,"sub_cates":null,"isBlockedAds":0,"label":"Web","author_id":null,"published_date":null};
+</script>
+    <script>
+    window.DONGLOGS_WAITDOCREADY=0,function(e,t){var o,n;"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self,o=e.Cookies,(n=e.Cookies=t()).noConflict=function(){return e.Cookies=o,n})}(this,function(){"use strict";function a(e){for(var t=1;t<arguments.length;t++){var o=arguments[t];for(var n in o)e[n]=o[n]}return e}var w={read:function(e){return e.replace(/%3B/g,";")},write:function(e){return e.replace(/;/g,"%3B")}};return function t(s,i){function o(e,t,o){if("undefined"!=typeof document){"number"==typeof(o=a({},i,o)).expires&&(o.expires=new Date(Date.now()+864e5*o.expires)),o.expires&&(o.expires=o.expires.toUTCString()),e=w.write(e).replace(/=/g,"%3D"),t=s.write(String(t),e);var n="";for(var r in o)o[r]&&(n+="; "+r,!0!==o[r]&&(n+="="+o[r].split(";")[0]));return document.cookie=e+"="+t+n}}return Object.create({set:o,get:function(e){if("undefined"!=typeof document&&(!arguments.length||e)){for(var t=document.cookie?document.cookie.split("; "):[],o={},n=0;n<t.length;n++){var r=t[n].split("="),i=r.slice(1).join("="),a=w.read(r[0]).replace(/%3D/g,"=");if(o[a]=s.read(i,a),e===a)break}return e?o[e]:o}},remove:function(e,t){o(e,"",a({},t,{expires:-1}))},withAttributes:function(e){return t(this.converter,a({},this.attributes,e))},withConverter:function(e){return t(a({},this.converter,e),this.attributes)}},{attributes:{value:Object.freeze(i)},converter:{value:Object.freeze(s)}})}(w,{path:"/"})}),window.webLog=window.webLog||{},function(r){var i=r.aff=r.aff||{};i._params="_waff_params",i._items="_waff_items",i.init=function(){try{var e=document.location.search;if(!e||-1===e.indexOf("aff_id"))return;for(var t={},o=new URLSearchParams(document.location.search).entries(),n={done:!1};!n.done;)(n=o.next()).value&&(t[n.value[0]]=n.value[1]);i._affParams=t,r.store.setItem(i._params,t)}catch(e){}},i.convert=function(){var e=i._affParams||r.store.getItem(i._params);if(!e)return"affParams not found";var t=i._affParams||JSON.parse(e);if(!t.aff_id)return"aff_id not found";var o=i._cartItems||r.store.getItem(i._items);return o?(t.cart_items=i._cartItems||JSON.parse(o),t.cart_items.constructor!==Array?"cartItems is invalid []":(t.event="Conversion",t.moment=(new Date).toISOString(),t.host=document.location.host,t.uuid=r.services.default.getId(),t.session_id=r.services.default.getSessionId(),t.user_agent=r.client.userAgent,r.http.postJson(i.POSTBACK,t,function(){i._affParams=null,i._cartItems=null,r.store.setItem(i._params,""),r.store.setItem(i._items,""),console.log("Conversion posted.")}),console.log("Postback",t),!0)):"cartItems not found"}}(window.webLog),window.webLog=window.webLog||{},window.webLog.client={},function(e){e.userAgent=(navigator.userAgent||navigator.vendor||window.opera||"").substr(0,250),e.browser=function(){var e=!!window.chrome&&!!window.chrome.webstore;if(e)return"Chrome";if("undefined"!=typeof InstallTrigger)return"Firefox";if(/constructor/i.test(window.HTMLElement)||"[object SafariRemoteNotification]"===(!window.safari||void 0!==window.safari&&window.safari.pushNotification).toString())return"Safari";var t=!!document.documentMode;if(t)return"IE";var o=!!window.opr&&!!window.opr.addons||!!window.opera||0<=navigator.userAgent.indexOf(" OPR/");return o?"Opera":!t&&window.StyleMedia||!(!e&&!o||!window.CSS)}(),e.os=function(){var e=navigator.userAgent||navigator.vendor||window.opera;if(/windows phone/i.test(e))return"Windows Phone";if(/android/i.test(e))return"Android";return!/iPad|iPhone|iPod/.test(e)||window.MSStream?"unknown":"iOS"}(),e.newId=function(e){var t,o,n="";for(e=e||32,t=0;t<e;t++)o=16*Math.random()|0,8!==t&&12!==t&&16!==t&&20!==t||(n+="-"),n+=(12===t?4:16===t?3&o|8:o).toString(16);return n},e.validId=function(e){return e&&36===e.length&&e.match(/^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$/)}}(window.webLog.client),window.webLog=window.webLog||{},function(e){"use strict";e=e||window;var o=[],n=!1,r=!1;function i(){if(!n){n=!0;for(var e=0;e<o.length;e++)o[e].fn.call(window,o[e].ctx);o=[]}}function a(){"complete"===document.readyState&&i()}e.ondocReady=function(e,t){if("function"!=typeof e)throw new TypeError("callback for docReady(fn) must be a function");n?setTimeout(function(){e(t)},1):(o.push({fn:e,ctx:t}),"complete"===document.readyState||!document.attachEvent&&"interactive"===document.readyState?setTimeout(i,1):r||(document.addEventListener?(document.addEventListener("DOMContentLoaded",i,!1),window.addEventListener("load",i,!1)):(document.attachEvent("onreadystatechange",a),window.attachEvent("onload",i)),r=!0))}}(window.webLog),window.webLog=window.webLog||{},window.webLog.dom={},function(e){e.harvest=function(e,o,n){var t=document.querySelectorAll(e);if(!t.length)return null;var r={};return o.forEach(function(e){r[e]=[]}),t.forEach(function(t){o.forEach(function(e){t.hasAttribute(e)?r[e].push(t.getAttribute(e)):n&&r[e].push(null)})}),r},e.scrolledTo=function(e){var t=window.$;if(t){var o=t(window).scrollTop(),n=o+t(window).height();try{var r=t(e).offset().top,i=r+t(e).height()}catch(e){return}return i<=n&&o<=r&&r}}}(window.webLog.dom),window.webLog=window.webLog||{},window.webLog.http={},function(e){e.postJson=function(e,t,o){var n=new XMLHttpRequest;n.open("POST",e,!0),n.setRequestHeader("Content-Type","application/json; charset=utf-8"),n.timeout=3e3,n.onreadystatechange=function(){4===n.readyState&&"function"==typeof o&&o(n.status,n.responseText)},n.send(JSON.stringify(t))}}(window.webLog.http),window.webLog=window.webLog||{},function(r){r.inspectlet=function(o,e){var t=Math.round(e/30),n=r.store.getItem("__insp");(n||(n=Math.floor(Math.random()*t+1).toString(),r.store.setItem("__insp",n)))&&"456"===n&&(window.__insp=window.__insp||[],window.__insp.push(["wid",o]),window.__insp.push(["identify",r.services.default.getId()]),setTimeout(function(){var e,t;void 0===window.__inspld&&(window.__inspld=1,(e=document.createElement("script")).type="text/javascript",e.async=!0,e.id="inspsync",e.src=("https:"===document.location.protocol?"https":"http")+"://cdn.inspectlet.com/inspectlet.js?wid="+o+"&r="+Math.floor((new Date).getTime()/36e5),(t=document.getElementsByTagName("script")[0]).parentNode.insertBefore(e,t))},0))}}(window.webLog),window.webLog=window.webLog||{},window.webLog.store={},function(e){e.method="cookie",e.getItem=function(e){var t=window.Cookies,o="."+window.COOKIE_DOMAIN;try{var n=window.localStorage.getItem(e)||t.get(e)||void 0}catch(e){}return n&&t.set(e,n,{domain:o}),n},e.setItem=function(e,t){var o=window.Cookies,n="."+window.COOKIE_DOMAIN;try{return o.set(e,t,{domain:n})}catch(e){return}},e.session={getItem:function(e){try{return window.sessionStorage.getItem(e)}catch(e){return}},setItem:function(e,t){try{return window.sessionStorage.setItem(e,t),e}catch(e){return}}}}(window.webLog.store),window.webLog=window.webLog||{},function(i){var a="//rec.donglogs.com/heatmap",t=[];function o(e){var t,o,n;null==(e=e||window.event).pageX&&null!=e.clientX&&(o=(t=e.target&&e.target.ownerDocument||document).documentElement,n=t.body,e.pageX=e.clientX+(o&&o.scrollLeft||n&&n.scrollLeft||0)-(o&&o.clientLeft||n&&n.clientLeft||0),e.pageY=e.clientY+(o&&o.scrollTop||n&&n.scrollTop||0)-(o&&o.clientTop||n&&n.clientTop||0))}function n(e,t,o,n){var r={event:e,moment:(new Date).toISOString(),url:document.location.href,uuid:i.services.default.getId(),width:window.innerWidth,height:window.innerHeight,page_y:Math.floor(window.pageYOffset),click_x:t,click_y:o,move_coords:n,abtest:i._abtest||null};i.http.postJson(a,r)}window.TRACK_HEAT&&(document.onmousemove=function(e){o(e),t.push([e.pageX,e.pageY]),9<t.length&&(n("Move",null,null,JSON.stringify(t)),t=[])},document.onclick=function(e){o(e),n("Click",e.pageX,e.pageY,null)})}(window.webLog),window.webLog=window.webLog||{},window.webLog.services=window.webLog.services||{},function(e){var t,o,n="default",r="__wuid",i="__wssid",a=e.store,s=e.http,w=e.client;function c(e,t){var o,n=typeof e;if(null==e||"string"==n)o=e;else if("object"==n)o=t?e:e instanceof Array?JSON.stringify(e.map(function(e){return c(e,1)})):JSON.stringify(e);else try{o=e.toString()}catch(e){o=void 0}return o}function d(){return o||((o=a.session.getItem(i))||(o=w.newId(6),a.session.setItem(i,o)),o)}function u(e){if(!e)return{};var t=document.createElement("a");return t.href=e,t}function f(){return t||((t=a.getItem(r))||(e=(window.location.hash||"").toLowerCase(),(t=w.validId(e)?e:null)&&void 0!==a.method&&a.setItem(r,t),t&&void 0===a.method&&window.WEBLOG_ALLOW_URL_HASH_WUID),t||(t=w.newId(),void 0!==a.method?a.setItem(r,t):window.WEBLOG_ALLOW_URL_HASH_WUID,t));var e}e.services[n]={enabled:!0,loaded:function(){return"string"==typeof window.WEBLOG_API_DEFAULT&&"object"==typeof e.store&&window.WEBLOG_API_DEFAULT.length},getId:f,getSessionId:d,identify:function(e,t,o){return"to-do"},track:function(e,t,o,n){var r=function(e,t){var o={};o.event=e,o.moment=(new Date).toISOString(),o.platform=window.WEBLOG_PLATFORM,o.log_ver=window.WEBLOG_VERSION,o.uuid=f(),o.session_id=d(),o.user_agent=w.userAgent,o.browser=w.browser,o.storage=a.method,o.protocol=window.location.protocol,o.host=window.location.host,o.pathname=window.location.pathname,o.search=window.location.search,o.hash=window.location.hash,o.referrer=document.referrer.substr(0,250),o.ref_host=u(o.referrer).host,function(e){var t=a.session.getItem("_sessionRef"),o=a.session.getItem("_sessionRefHost");t||(t=document.referrer.substr(0,250),o=u(t).host,t||(o=t="Direct"),a.session.setItem("_sessionRef",t),a.session.setItem("_sessionRefHost",o));e.session_referrer=t,e.session_ref_host=o}(o);var n,r=a.getItem("fcm_token");r&&(o.fcm_token=r);if("object"==typeof window.wDataLayer)for(n in window.wDataLayer)o[n]=c(window.wDataLayer[n]);if(t&&"object"==typeof t)for(n in t)o[n]=c(t[n]);else o.label=c(t);return o}(e,t);return o="function"==typeof o?(n=o,window.WEBLOG_API_DEFAULT):o||window.WEBLOG_API_DEFAULT,s.postJson(o,r,n),r},trackJSErr:function(e,t,o,n,r){var i={event:"JSErr"};i.moment=(new Date).toISOString(),i.uuid=f(),i.session_id=d(),i.user_agent=w.userAgent,i.browser=w.browser,i.storage=a.method,i.protocol=window.location.protocol,i.host=window.location.host,i.pathname=window.location.pathname,i.search=window.location.search,i.hash=window.location.hash,i.referrer=document.referrer.substr(0,250),i.message=e||null,i.source=t||null,i.lineno=o||null,i.colno=n||null,i.error=(r||"").toString(),s.postJson("//logsbin.dantri.com.vn/rec/dantri_com_vn_error",i)}},e._track=e.services[n].track}(window.webLog),window.webLog=window.webLog||{},window.webLog.services=window.webLog.services||{},window.webLog,window.webLog=window.webLog||{},function(s){var o=[];s.track=function(t,r,i){var a="function"==typeof i;try{window.webLog.preTracking&&window.webLog.preTracking[window.WEBLOG_PLATFORM][t]()}catch(e){}(function(){if(o.length)return o;for(var e in s.services)o.push(e);return o})().forEach(function(o){var n,e=s.services[o];e&&e.enabled&&e.loaded()?n=e.track(t,r,function(e,t){a&&i(o,n,e,t)}):a&&i(o,null,null,null)})}}(window.webLog),window.WEBLOG_API_DEFAULT="//logsbin.dantri.com.vn/rec/dantri_com_vn",window.WEBLOG_ALLOW_URL_HASH_WUID=!1,window.WEBLOG_PLATFORM=window.WEBLOG_PLATFORM||"web",window.COOKIE_DOMAIN=window.COOKIE_DOMAIN||"dantri.com.vn",window.WEBLOG_VERSION="0.0.98",window.WEBLOG_TIMESTAMP=Date.now(),function(t){function e(){var e=(document.title||"").substr(0,250);t.track("Pageview",{title:e},t.tracked)}0===window.DONGLOGS_WAITDOCREADY?e():t.ondocReady(e)}(window.webLog);/**2020-07-24T05:02:50.662Z**/
+    </script>
+
+    
+
+
+<meta name="robots" content="index,follow,all"> 
+<title>Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới | Báo Dân trí</title>
+<meta name="description" content="Tin tức thế giới tổng hợp - Phân tích tình hình an ninh, quân sự và kinh tế quốc tế. Cập nhật tin tức thế giới 24h qua, chân dung, hồ sơ nhân vật và sự kiện – Báo điện tử Dantri" />
+<meta name="keywords" content="dantri,báo điện tử dantri,thời tiết,tin tức,tin nhanh,thể thao,dự báo thời tiết,tin the thao,thể thao 24h,giá vàng hôm nay,tin the gioi,đọc báo,tin moi,giá vàng,thời tiết hôm nay,tin tức online,bóng đá việt nam,pháp luật,dự báo thời tiết hôm nay,tin tức 24 giờ,tin nong,thời tiết hà nội,lịch thi đấu bóng đá hôm nay,thời sự,an ninh,tin tức trong ngày" />
+<meta name="title" content="Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="dantri.com.vn" />
+
+<meta name="copyright" content="dantri.com.vn" />
+<meta name="author" content="dantri.com.vn" />
+
+
+<!-- Schema.org markup for Google+ -->
+<meta name="google-site-verification" content="W60o5FIiNTC4qM0e14lVCrmQOH7MDm2jy50E3fvvTHs">
+<meta itemprop="name" content="Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới">
+<meta itemprop="image" content="https://icdn.dantri.com.vn/zoom/1200_630/2020/12/05/my-1600214556268-1607133959267.jpg">
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="article">
+<meta name="twitter:site" content="Báo điện tử Dân Trí">
+<meta name="twitter:title" content="Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới">
+<meta name="twitter:description" content="Tin tức thế giới tổng hợp - Phân tích tình hình an ninh, quân sự và kinh tế quốc tế. Cập nhật tin tức thế giới 24h qua, chân dung, hồ sơ nhân vật và sự kiện – Báo điện tử Dantri">
+<meta name="twitter:creator" content="dantri.com.vn">
+<meta name="twitter:image" content="https://icdn.dantri.com.vn/zoom/1200_630/2020/12/05/my-1600214556268-1607133959267.jpg">
+<!-- Open Graph data -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Báo điện tử Dân Trí" />
+<meta property="og:title" content="Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới" />
+<meta property="og:url" content="https://dantri.com.vn/the-gioi.htm" />
+<meta property="og:image" content="http://icdn.dantri.com.vn/zoom/1200_630/2020/12/05/my-1600214556268-1607133959267.jpg" />
+<meta property="og:description" content="Tin tức thế giới tổng hợp - Phân tích tình hình an ninh, quân sự và kinh tế quốc tế. Cập nhật tin tức thế giới 24h qua, chân dung, hồ sơ nhân vật và sự kiện – Báo điện tử Dantri" />
+<meta property="og:locale" content="vi_VN" />
+<meta name="format-detection" content="telephone=no">
+<meta name="thumbnail" content="https://icdn.dantri.com.vn/2020/12/05/my-1600214556268-1607133959267.jpg" />    
+
+
+<meta property="og:image:secure_url" content="https://icdn.dantri.com.vn/zoom/1200_630/2020/12/05/my-1600214556268-1607133959267.jpg" />
+
+
+<meta property="fb:app_id" content="164035690775918">
+
+<meta name="resource-type" content="Document">
+<meta name="distribution" content="Global">
+<meta property="fb:pages" content="345033318906366">
+<meta property="article:author" content="https://www.facebook.com/baodantridientu">
+<meta property="article:publisher" content="https://www.facebook.com/baodantridientu">
+<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="audience" content="General">
+    <meta http-equiv="content-language" content="vi" />
+    <meta name="revisit-after" content="1 days">
+        <link rel="canonical" href="https://dantri.com.vn/the-gioi.htm" />
+
+    
+  <link type="text/css" rel="stylesheet" href="https://cdnweb.dantri.com.vn/bundle/static/dantri.min.css?_=66cad469" data-href="/bundle/static/dantri.min.css?_=66cad469">
+      
+    
+    
+    
+
+        <link type="text/css" rel="stylesheet" href="https://cdnweb.dantri.com.vn/bundle/static/categoryv2.min.css?_=66cad469" data-href="/bundle/static/categoryv2.min.css?_=66cad469">
+        
+  
+  
+ 
+
+
+
+    
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PM6G9ZN');</script>
+    <!-- End Google Tag Manager -->
+      <link href="https://amp.dantri.com.vn/the-gioi.htm" rel="amphtml"/>
+          <meta http-equiv="refresh" content="600">
+    
+
+</head>
+<body class="categoryv2  dtv2 " data-isrc="categoryv2" xds-provider="">
+
+
+
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6G9ZN"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<header class="dt-header">
+  
+
+    <div class="dt-header___content">
+      <div class="container">
+        <div class="dt-header__logo">
+          <a title="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7" href="/">
+            <img src="https://cdnweb.dantri.com.vn/bundle/static/assets/logo_dantri.png?v=1204181606" alt="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7">
+          </a>
+        </div>
+                    <div id="xds-2" ></div>
+
+        <form method="GET" action="/tim-kiem.htm" class="search-box">
+          <input id="js-search-input" type="text" class="form-control search-box__input" name="s" placeholder="Tìm kiếm tin tức" autocomplete="off">
+          <button class="btn search-box__btn" type="submit">
+            <i class="dt-icon icon-search"></i>
+          </button>
+        </form>
+        
+        
+      </div>
+    </div>
+    <nav class="site-menu">
+    <div class="container">
+        <ol class="site-menu__list list-unstyled">
+            <li class="home">
+                <a title="Trang chủ" href="/">
+                    <i class="dt-icon icon-home"></i>
+                </a>
+            </li>
+                            <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|1" data-cat-id="0" class="" href="/video-page.htm">Video</a>
+                                    </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|2" data-cat-id="728" class="" title="Tin tức sự kiện nóng mới nhất, cập nhật liên tục" href="/su-kien.htm">Sự kiện</a>
+                                    </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|3" data-cat-id="20" class="" title="Xã hội  - Tin tức đa dạng về xã hội, gia đình, du lịch, mẹo vặt cuộc sống" href="/xa-hoi.htm">Xã hội</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Đại hội Đảng" href="/xa-hoi/dai-hoi-dang.htm">Đại hội Đảng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Chính trị" href="/xa-hoi/chinh-tri.htm">Chính trị</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Phóng sự-Ký sự" href="/xa-hoi/phong-su-ky-su.htm">Phóng sự-Ký sự</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Giao thông" href="/xa-hoi/giao-thong.htm">Giao thông</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Môi trường" href="/xa-hoi/moi-truong.htm">Môi trường</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Hồ sơ" href="/xa-hoi/ho-so.htm">Hồ sơ</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|4" data-cat-id="36" class="active" title="Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới" href="/the-gioi.htm">Thế giới</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Bầu cử tổng thống Mỹ 2020" href="/the-gioi/bau-cu-tong-thong-my-2020.htm">Bầu cử tổng thống Mỹ 2020</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Châu Á" href="/the-gioi/chau-a.htm">Châu Á</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="EU &amp; Nga" href="/the-gioi/eu-nga.htm">EU &amp; Nga</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Châu Mỹ" href="/the-gioi/chau-my.htm">Châu Mỹ</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Điểm nóng" href="/the-gioi/diem-nong.htm">Điểm nóng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Tư liệu" href="/the-gioi/tu-lieu.htm">Tư liệu</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|7" title="Kiều bào" href="/the-gioi/kieu-bao.htm">Kiều bào</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|5" data-cat-id="26" class="" title="Tin tức thể thao 24h, lịch thi đấu, kết quả, video clip" href="/the-thao.htm">Thể thao</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Bóng đá trong nước" href="/the-thao/bong-da-trong-nuoc.htm">Bóng đá trong nước</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Bóng đá Châu Âu" href="/the-thao/bong-da-chau-au.htm">Bóng đá Châu Âu</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Võ thuật" href="/the-thao/vo-thuat.htm">Võ thuật</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Tennis" href="/the-thao/tennis.htm">Tennis</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Các môn Thể thao khác" href="/the-thao/cac-mon-the-thao-khac.htm">Các môn Thể thao khác</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Hậu trường" href="/the-thao/hau-truong.htm">Hậu trường</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|6" data-cat-id="133" class="" title="Tin tức An sinh xã hội, thông tin đào tạo việc làm" href="/lao-dong-viec-lam.htm">Việc làm</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Chính sách" href="/lao-dong-viec-lam/chinh-sach.htm">Chính sách</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Việc làm" href="/lao-dong-viec-lam/viec-lam.htm">Việc làm</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Đào tạo" href="/lao-dong-viec-lam/dao-tao.htm">Đào tạo</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Gói an sinh 62.000 tỷ đồng" href="/lao-dong-viec-lam/goi-an-sinh-62000-ty-dong.htm">Gói an sinh 62.000 tỷ đồng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Xuất khẩu lao động" href="/lao-dong-viec-lam/xuat-khau-lao-dong.htm">Xuất khẩu lao động</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Chúng tôi nói" href="/lao-dong-viec-lam/chung-toi-noi.htm">Chúng tôi nói</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|7" data-cat-id="7" class="" title="Sức khỏe: Cẩm nang chăm sóc sức khỏe gia đình, cách Phòng Bệnh" href="/suc-khoe.htm">Sức khỏe</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Ung thư" href="/suc-khoe/ung-thu.htm">Ung thư</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Kiến thức giới tính" href="/suc-khoe/kien-thuc-gioi-tinh.htm">Kiến thức giới tính</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Tư vấn" href="/suc-khoe/tu-van.htm">Tư vấn</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Làm đẹp" href="/suc-khoe/lam-dep.htm">Làm đẹp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Ngày Thầy thuốc Việt Nam" href="/suc-khoe/ngay-thay-thuoc-viet-nam.htm">Ngày Thầy thuốc Việt Nam</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Đại dịch Covid-19" href="/suc-khoe/dai-dich-covid-19.htm">Đại dịch Covid-19</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|7" title="Bệnh Gan" href="/suc-khoe/benh-gan.htm">Bệnh Gan</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|8" data-cat-id="167" class="" title="Những số phận không may mắn và Tấm lòng nhân ái" href="/tam-long-nhan-ai.htm">Nhân ái</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Danh sách ủng hộ" href="/tam-long-nhan-ai/danh-sach-ung-ho.htm">Danh sách ủng hộ</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Danh sách kết chuyển" href="/tam-long-nhan-ai/danh-sach-ket-chuyen.htm">Danh sách kết chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Hoàn cảnh" href="/tam-long-nhan-ai/hoan-canh.htm">Hoàn cảnh</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|9" data-cat-id="76" class="" title="Tin kinh doanh: Thị trường, tài chính, kinh tế, doanh nghiệp" href="/kinh-doanh.htm">Kinh doanh</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Tài chính - Đầu tư" href="/kinh-doanh/tai-chinh-dau-tu.htm">Tài chính - Đầu tư</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Thị trường" href="/kinh-doanh/thi-truong.htm">Thị trường</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Doanh nghiệp" href="/kinh-doanh/doanh-nghiep.htm">Doanh nghiệp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Khởi nghiệp" href="/kinh-doanh/khoi-nghiep.htm">Khởi nghiệp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Bảo vệ NTD" href="/kinh-doanh/bao-ve-ntd.htm">Bảo vệ NTD</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Bảo hiểm" href="/kinh-doanh/bao-hiem.htm">Bảo hiểm</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|7" title="Quốc tế" href="/kinh-doanh/quoc-te.htm">Quốc tế</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|8" title="Nhà đất" href="/kinh-doanh/nha-dat.htm">Nhà đất</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|10" data-cat-id="927" class="" title="Tin tức thị trường bất động sản, nhà đất, dự án mới" href="/bat-dong-san.htm">Bất động sản</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Dự án" href="/bat-dong-san/du-an.htm">Dự án</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Thị trường" href="/bat-dong-san/thi-truong.htm">Thị trường</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Nhịp sống đô thị" href="/bat-dong-san/nhip-song-do-thi.htm">Nhịp sống đô thị</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Sống xanh" href="/bat-dong-san/song-xanh.htm">Sống xanh</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Sắc màu Nhật Bản" href="/bat-dong-san/sac-mau-nhat-ban.htm">Sắc màu Nhật Bản</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|11" data-cat-id="111" class="" title="Ô tô xe máy | Thông tin thị trường oto xe máy, giá mua bán xe" href="/o-to-xe-may.htm">Xe &#x2B;&#x2B;</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Thị trường xe" href="/o-to-xe-may/thi-truong-xe.htm">Thị trường xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Bảng giá ô tô" href="/o-to-xe-may/bang-gia-o-to.htm">Bảng giá ô tô</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Văn hoá xe" href="/o-to-xe-may/van-hoa-xe.htm">Văn hoá xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Tư vấn xe" href="/o-to-xe-may/tu-van-xe.htm">Tư vấn xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Đua xe" href="/o-to-xe-may/dua-xe.htm">Đua xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Giá xe" href="/o-to-xe-may/gia-xe.htm">Giá xe</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|12" data-cat-id="119" class="" title="Sức mạnh số - Tin khoa học công nghệ kỹ thuật mới nhất, nghiên cứu ứng dụng" href="/suc-manh-so.htm">Sức mạnh số</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Máy tính - Mạng" href="/suc-manh-so/vi-tinh.htm">Máy tính - Mạng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Di động - Viễn thông" href="/suc-manh-so/dien-thoai.htm">Di động - Viễn thông</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Điện tử tiêu dùng" href="/suc-manh-so/dien-may.htm">Điện tử tiêu dùng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Nghe nhìn" href="/suc-manh-so/nghe-nhin.htm">Nghe nhìn</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Phần mềm - Bảo mật" href="/suc-manh-so/phan-mem-bao-mat.htm">Phần mềm - Bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Thủ thuật - Mẹo vặt" href="/suc-manh-so/thu-thuat.htm">Thủ thuật - Mẹo vặt</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|7" title="Thị trường công nghệ" href="/suc-manh-so/thi-truong-cong-nghe.htm">Thị trường công nghệ</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|13" data-cat-id="25" class="" title="Giáo dục - Thông tin tuyển sinh, du học mới nhất" href="/giao-duc-huong-nghiep.htm">Giáo dục</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Tin tuyển sinh" href="/giao-duc-huong-nghiep/tin-tuyen-sinh.htm">Tin tuyển sinh</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Khuyến học" href="/giao-duc-huong-nghiep/khuyen-hoc.htm">Khuyến học</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Gương sáng" href="/giao-duc-huong-nghiep/guong-sang.htm">Gương sáng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Giáo dục - Nghề nghiệp" href="/giao-duc-huong-nghiep/giao-duc-nghe-nghiep.htm">Giáo dục - Nghề nghiệp</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|14" data-cat-id="730" class="" href="/van-hoa.htm">Văn hóa</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Đời sống văn hóa" href="/van-hoa/doi-song-van-hoa.htm">Đời sống văn hóa</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Điện ảnh" href="/van-hoa/dien-anh.htm">Điện ảnh</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Âm nhạc" href="/van-hoa/am-nhac.htm">Âm nhạc</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Văn học" href="/van-hoa/van-hoc.htm">Văn học</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Sân khấu - Dân gian" href="/van-hoa/san-khau-dan-gian.htm">Sân khấu - Dân gian</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" title="Hạt giống tâm hồn" href="/van-hoa/hat-giong-tam-hon.htm">Hạt giống tâm hồn</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|7" title="Hương vị Việt" href="/van-hoa/huong-vi-viet.htm">Hương vị Việt</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|15" data-cat-id="23" class="" title="Tin tức giải trí mới nhất 24h | showbiz  sao việt và thế giới" href="/giai-tri.htm">Giải trí</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Sao Việt" href="/giai-tri/sao-viet.htm">Sao Việt</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Hollywood" href="/giai-tri/hollywood.htm">Hollywood</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Châu Á" href="/giai-tri/chau-a.htm">Châu Á</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Thời trang" href="/giai-tri/thoi-trang.htm">Thời trang</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Xem - Ăn - Chơi" href="/giai-tri/xem-an-choi.htm">Xem - Ăn - Chơi</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|16" data-cat-id="835" class="" href="/du-lich.htm">Du Lịch</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Tin tức" href="/du-lich/tin-tuc.htm">Tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Khám phá" href="/du-lich/kham-pha.htm">Khám phá</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Món ngon - Điểm đẹp" href="/du-lich/mon-ngon-diem-dep.htm">Món ngon - Điểm đẹp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" title="Tour hay - Khuyến mại" href="/du-lich/tour-hay-khuyen-mai.htm">Tour hay - Khuyến mại</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" title="Video - Ảnh" href="/du-lich/video-anh.htm">Video - Ảnh</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                <li class="dropdown dropdown--hover">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|17" data-cat-id="170" class="" title="Tin tức pháp luật 24h, vụ án, hình sự" href="/phap-luat.htm">Pháp luật</a>
+                                    </li>
+                <li class="dropdown dropdown--hover dropdown--right">
+                                        
+                    <a data-utm="Cate_TheGioi|MenuMain|18" data-cat-id="135" class="" title="Nhịp sống trẻ, khởi nghiệp, giáo dục cộng đồng" href="/nhip-song-tre.htm">Nhịp sống trẻ</a>
+                                            <div class="dropdown__content">
+                            <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|1" title="Người Việt trẻ" href="/nhip-song-tre/nguoi-viet-tre.htm">Người Việt trẻ</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" title="Teen đẹp" href="/nhip-song-tre/teen-dep.htm">Teen đẹp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" title="Phóng sự trẻ" href="/nhip-song-tre/phong-su-tre.htm">Phóng sự trẻ</a>
+                                    </li>
+                            </ol>
+                        </div>
+                </li>
+                             <li class="others dropdown dropdown--hover dropdown--right" id="site-dropdown">
+                    <a id="site-dropdown-button" href="javascript:;">
+                      <span class="bars"></span>
+                    </a>
+                    <div class="dropdown__content" id="site-dropdown__content">
+                        <ol class="site-menu__dropdown">
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|19" title="Khoa học" href="/khoa-hoc-cong-nghe.htm">
+                                        Khoa học</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|20" title="Blog" href="/blog.htm">
+                                        Blog</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|21" title="Du học" href="/du-hoc.htm">
+                                        Du học</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|22" title="Tuyển sinh" href="/tuyen-sinh.htm">
+                                        Tuyển sinh</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|23" title="Fica" href="http://fica.vn/">
+                                        Fica</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|24" title="Bạn đọc" href="/ban-doc.htm">
+                                        Bạn đọc</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|25" title="Đời sống" href="/doi-song.htm">
+                                        Đời sống</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|26" title="Chuyện lạ" href="/chuyen-la.htm">
+                                        Chuyện lạ</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|27" title="Diễn đàn" href="/dien-dan.htm">
+                                        Diễn đàn</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|28" title="English" href="http://www.dtinews.vn">
+                                        English</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|29" title="Tình yêu" href="/tinh-yeu-gioi-tinh.htm">
+                                        Tình yêu</a>
+                                </li>
+                                <li>
+                                    <a data-utm="Cate_TheGioi|Main_Menu|30" title="An sinh" href="/an-sinh.htm">
+                                        An sinh</a>
+                                </li>
+                        </ol>
+                    </div>
+                  </li>
+        </ol>
+    </div>
+</nav>
+                <div class="dt-top-banner">
+                <div class="top-banner">
+                    <div class="container">
+                        <div class="top-banner__content">
+                            <div id="xds-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+
+</header>
+<main class="dt-main">
+
+            <div id="xds-90"></div>
+
+<div class="container clearfix  " data-custom-script="36">
+    <div class="page-header page-header--category">
+        <div class="d-flex">
+            <h1 class="page-header__title">
+            <a data-utm="Cate_TheGioi|MenuMain|1" title="Thế giới" href="/the-gioi.htm">
+                Thế giới
+            </a>
+            </h1>
+           
+                <div class="top-trending">
+        <span class="top-trending__label">Dòng sự kiện</span>
+        <ul class="top-trending__list list-unstyled">
+                <li>
+                    <a title="Bầu cử tổng thống Mỹ 2020" href="https://dantri.com.vn/the-gioi/bau-cu-tong-thong-my-2020.htm">Bầu cử tổng thống Mỹ 2020</a>
+                </li>
+                <li>
+                    <a title="Xung đột Nagorno-Karabakh" href="/event/xung-dot-nagorno-karabakh-3892.htm">Xung đột Nagorno-Karabakh</a>
+                </li>
+                <li>
+                    <a title="Covid-19 hoành hành khắp thế giới" href="/event/virus-corona-hoanh-hanh-khap-the-gioi-3826.htm">Covid-19 hoành hành khắp thế giới</a>
+                </li>
+        </ul>
+    </div>
+
+
+        </div>    
+                            <ul class="category-navigation">
+                                                                <li class=" ">
+                                        <h2 class="category-navigation__item">
+                                        <a data-utm="Cate_TheGioi|MenuCate|2" data-cate-id="992" href="/the-gioi/bau-cu-tong-thong-my-2020.htm">Bầu cử tổng thống Mỹ 2020</a>
+                                        </h2>
+                                    </li>
+                                    <li class=" ">
+                                        <h2 class="category-navigation__item">
+                                        <a data-utm="Cate_TheGioi|MenuCate|3" data-cate-id="140" href="/the-gioi/chau-a.htm">Châu Á</a>
+                                        </h2>
+                                    </li>
+                                    <li class=" ">
+                                        <h2 class="category-navigation__item">
+                                        <a data-utm="Cate_TheGioi|MenuCate|4" data-cate-id="138" href="/the-gioi/eu-nga.htm">EU &amp; Nga</a>
+                                        </h2>
+                                    </li>
+                                    <li class=" ">
+                                        <h2 class="category-navigation__item">
+                                        <a data-utm="Cate_TheGioi|MenuCate|5" data-cate-id="171" href="/the-gioi/chau-my.htm">Châu Mỹ</a>
+                                        </h2>
+                                    </li>
+                                    <li class=" ">
+                                        <h2 class="category-navigation__item">
+                                        <a data-utm="Cate_TheGioi|MenuCate|6" data-cate-id="172" href="/the-gioi/diem-nong.htm">Điểm nóng</a>
+                                        </h2>
+                                    </li>
+                                    <li class=" ">
+                                        <h2 class="category-navigation__item">
+                                        <a data-utm="Cate_TheGioi|MenuCate|7" data-cate-id="230" href="/the-gioi/tu-lieu.htm">Tư liệu</a>
+                                        </h2>
+                                    </li>
+                                    <li class=" ">
+                                        <h2 class="category-navigation__item">
+                                        <a data-utm="Cate_TheGioi|MenuCate|8" data-cate-id="251" href="/the-gioi/kieu-bao.htm">Kiều bào</a>
+                                        </h2>
+                                    </li>
+                        </ul>
+    </div>
+      <!-- highlight -->
+    <div class="dt-highlight clearfix">
+      <div class="col col--highlight-news clearfix">
+        
+    <div class="news-item news-item--left2right news-item--category-highlight">
+        
+
+
+<a  data-utm="Cate_TheGioi|Cover|1"
+ class="news-item__avatar"   href="/the-gioi/my-gia-tang-trung-phat-quan-chuc-trung-quoc-20201205090744324.htm"
+  title="Mỹ gia tăng trừng phạt quan chức Trung Quốc">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Mỹ gia tăng trừng phạt quan chức Trung Quốc" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/1020_680/2020/12/05/my-1600214556268-1607133959267.jpg" src="https://icdn.dantri.com.vn/zoom/1020_680/filters:quality(0)/2020/12/05/my-1600214556268-1607133959267.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Cover|1"
+  href="/the-gioi/my-gia-tang-trung-phat-quan-chuc-trung-quoc-20201205090744324.htm"
+  title="Mỹ gia tăng trừng phạt quan chức Trung Quốc">
+  
+  Mỹ gia tăng trừng phạt quan chức Trung Quốc    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Cover|1" class="news-item__sapo" title="Mỹ gia tăng trừng phạt quan chức Trung Quốc" href="/the-gioi/my-gia-tang-trung-phat-quan-chuc-trung-quoc-20201205090744324.htm">(Dân trí)&nbsp;- Bộ Ngoại giao Mỹ ban hành lệnh trừng phạt đối với các quan chức Trung Quốc bị cáo buộc có hành vi "đe dọa và cưỡng ép" những người bất đồng chính kiến với Bắc Kinh.</a>
+                                             </div>
+    </div>
+
+        <div class="col col--highlight-top3">
+          <ul class="dt-list dt-list--top3">
+              <li>
+                
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Top3|1"
+ class="news-item__avatar"   href="/the-gioi/nuoc-anh-boi-roi-vi-67-ty-usd-mat-tich-20201205082502524.htm"
+  title="Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/468_310/2020/12/05/anh-1607131391701.jpg" src="https://icdn.dantri.com.vn/zoom/468_310/filters:quality(0)/2020/12/05/anh-1607131391701.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Top3|1"
+  href="/the-gioi/nuoc-anh-boi-roi-vi-67-ty-usd-mat-tich-20201205082502524.htm"
+  title="Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;">
+  
+  Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+              </li>
+              <li>
+                
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Top3|2"
+ class="news-item__avatar"   href="/the-gioi/quan-chuc-cap-cao-na-uy-tu-chuc-vi-vo-la-nguoi-trung-quoc-20201205075559425.htm"
+  title="Quan chức cấp cao Na Uy từ chức vì vợ là người Trung Quốc">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Quan chức cấp cao Na Uy từ chức vì vợ là người Trung Quốc" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/468_310/2020/12/05/medium-202012046-d-9-d-87-dae-2-1607129532468.jpg" src="https://icdn.dantri.com.vn/zoom/468_310/filters:quality(0)/2020/12/05/medium-202012046-d-9-d-87-dae-2-1607129532468.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Top3|2"
+  href="/the-gioi/quan-chuc-cap-cao-na-uy-tu-chuc-vi-vo-la-nguoi-trung-quoc-20201205075559425.htm"
+  title="Quan chức cấp cao Na Uy từ chức vì vợ là người Trung Quốc">
+  
+  Quan chức cấp cao Na Uy từ chức vì vợ là người Trung Quốc    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+              </li>
+              <li>
+                
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Top3|3"
+ class="news-item__avatar"   href="/the-gioi/trump-dinh-tai-tranh-cu-nam-2024-dang-cong-hoa-roi-vao-the-tien-thoai-luong-nan-20201205070611777.htm"
+  title="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/468_310/2020/12/05/trump-202416046922535741387029959-1607126693969.jpg" src="https://icdn.dantri.com.vn/zoom/468_310/filters:quality(0)/2020/12/05/trump-202416046922535741387029959-1607126693969.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Top3|3"
+  href="/the-gioi/trump-dinh-tai-tranh-cu-nam-2024-dang-cong-hoa-roi-vao-the-tien-thoai-luong-nan-20201205070611777.htm"
+  title="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;">
+  
+  Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+              </li>
+          </ul>
+        </div>
+        
+      </div>
+      <!-- top 5 article phía phải -->
+            <div id="xds-100" class="col col--highlight-ads" cat-id="">
+    
+            </div>
+      
+    </div>
+    <div class="dt-divider"></div>
+  
+
+
+  <div class="clearfix  dt-main-category" sub-cat="1" >
+    <div class="col col--primary" >
+      <div id="primary-category-col"></div>
+      <ul class="dt-list dt-list--lg">
+                  <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|1"
+  href="/the-gioi/my-co-the-mo-rong-tay-chay-cac-hang-cong-nghe-trung-quoc-tren-toan-cau-20201205070136553.htm"
+  title="Mỹ có thể mở rộng &quot;tẩy chay&quot; các hãng công nghệ Trung Quốc trên toàn cầu">
+  
+  Mỹ có thể mở rộng &quot;tẩy chay&quot; các hãng công nghệ Trung Quốc trên toàn cầu    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|1"
+ class="news-item__avatar"   href="/the-gioi/my-co-the-mo-rong-tay-chay-cac-hang-cong-nghe-trung-quoc-tren-toan-cau-20201205070136553.htm"
+  title="Mỹ có thể mở rộng &quot;tẩy chay&quot; các hãng công nghệ Trung Quốc trên toàn cầu">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Mỹ có thể mở rộng &quot;tẩy chay&quot; các hãng công nghệ Trung Quốc trên toàn cầu" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/05/china-1607127262791.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/05/china-1607127262791.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|1" class="news-item__sapo" title="Mỹ có thể mở rộng &quot;tẩy chay&quot; các hãng công nghệ Trung Quốc trên toàn cầu" href="/the-gioi/my-co-the-mo-rong-tay-chay-cac-hang-cong-nghe-trung-quoc-tren-toan-cau-20201205070136553.htm">(Dân trí)&nbsp;- Quốc hội Mỹ đang lên kế hoạch về một quy tắc mới để gây sức ép lên các đồng minh nhằm "tẩy chay" các hãng viễn thông lớn của Trung Quốc.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">2 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|2"
+  href="/the-gioi/thong-doc-georgia-de-nghi-thanh-tra-ket-qua-bau-cu-sau-video-to-gian-lan-20201205065805137.htm"
+  title="Thống đốc Georgia đề nghị thanh tra kết quả bầu cử sau video tố gian lận">
+  
+  Thống đốc Georgia đề nghị thanh tra kết quả bầu cử sau video tố gian lận    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|2"
+ class="news-item__avatar"   href="/the-gioi/thong-doc-georgia-de-nghi-thanh-tra-ket-qua-bau-cu-sau-video-to-gian-lan-20201205065805137.htm"
+  title="Thống đốc Georgia đề nghị thanh tra kết quả bầu cử sau video tố gian lận">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Thống đốc Georgia đề nghị thanh tra kết quả bầu cử sau video tố gian lận" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/05/bau-cu-1607126148348.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/05/bau-cu-1607126148348.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|2" class="news-item__sapo" title="Thống đốc Georgia đề nghị thanh tra kết quả bầu cử sau video tố gian lận" href="/the-gioi/thong-doc-georgia-de-nghi-thanh-tra-ket-qua-bau-cu-sau-video-to-gian-lan-20201205065805137.htm">(Dân trí)&nbsp;- Thống đốc bang Georgia Brian Kemp kêu gọi thanh tra lại kết quả bầu cử sau khi xuất hiện đoạn video tố cáo gian lận kiểm phiếu tại bang này.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">3 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|3"
+  href="/the-gioi/trung-quoc-dat-dieu-kien-mo-lai-lanh-su-quan-my-20201204222756612.htm"
+  title="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ">
+  
+  Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|3"
+ class="news-item__avatar"   href="/the-gioi/trung-quoc-dat-dieu-kien-mo-lai-lanh-su-quan-my-20201204222756612.htm"
+  title="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/trung-quoc-1607095498934.png" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/trung-quoc-1607095498934.png">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|3" class="news-item__sapo" title="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ" href="/the-gioi/trung-quoc-dat-dieu-kien-mo-lai-lanh-su-quan-my-20201204222756612.htm">(Dân trí)&nbsp;- Trung Quốc tuyên bố nước này sẽ xem xét mở lại lãnh sự quán Mỹ nếu Washington sẵn sàng thực hiện hành động tương tự.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">3 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|4"
+  href="/the-gioi/hang-loat-quoc-gia-chi-trich-trung-quoc-vu-dang-anh-gay-tranh-cai-20201204215008432.htm"
+  title="Hàng loạt quốc gia chỉ trích Trung Quốc vụ đăng ảnh gây tranh cãi">
+  
+  Hàng loạt quốc gia chỉ trích Trung Quốc vụ đăng ảnh gây tranh cãi    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|4"
+ class="news-item__avatar"   href="/the-gioi/hang-loat-quoc-gia-chi-trich-trung-quoc-vu-dang-anh-gay-tranh-cai-20201204215008432.htm"
+  title="Hàng loạt quốc gia chỉ trích Trung Quốc vụ đăng ảnh gây tranh cãi">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Hàng loạt quốc gia chỉ trích Trung Quốc vụ đăng ảnh gây tranh cãi" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/australia-1607093289728.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/australia-1607093289728.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|4" class="news-item__sapo" title="Hàng loạt quốc gia chỉ trích Trung Quốc vụ đăng ảnh gây tranh cãi" href="/the-gioi/hang-loat-quoc-gia-chi-trich-trung-quoc-vu-dang-anh-gay-tranh-cai-20201204215008432.htm">(Dân trí)&nbsp;- Liên minh châu Âu (EU) và hàng loạt quốc gia đã chỉ trích Trung Quốc vì đăng tải bức ảnh gây tranh cãi khiến mối quan hệ với Australia bị ảnh hưởng.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">11 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|5"
+  href="/multimedia/dai-su-kritenbrink-khai-truong-khong-gian-hoa-ky-tai-dh-thai-nguyen-20201204195341037.htm"
+  title="Đại sứ Kritenbrink khai trương &quot;Không gian Hoa Kỳ&quot; tại ĐH Thái Nguyên">
+  
+  Đại sứ Kritenbrink khai trương &quot;Không gian Hoa Kỳ&quot; tại ĐH Thái Nguyên    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|5"
+ class="news-item__avatar"   href="/multimedia/dai-su-kritenbrink-khai-truong-khong-gian-hoa-ky-tai-dh-thai-nguyen-20201204195341037.htm"
+  title="Đại sứ Kritenbrink khai trương &quot;Không gian Hoa Kỳ&quot; tại ĐH Thái Nguyên">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Đại sứ Kritenbrink khai trương &quot;Không gian Hoa Kỳ&quot; tại ĐH Thái Nguyên" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/hangout-dai-hoc-thai-nguyen-50-1607083684329.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/hangout-dai-hoc-thai-nguyen-50-1607083684329.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|5" class="news-item__sapo" title="Đại sứ Kritenbrink khai trương &quot;Không gian Hoa Kỳ&quot; tại ĐH Thái Nguyên" href="/multimedia/dai-su-kritenbrink-khai-truong-khong-gian-hoa-ky-tai-dh-thai-nguyen-20201204195341037.htm">(Dân trí)&nbsp;- Không gian nằm trong khu Học Liệu và CNTT ĐH Thái Nguyên giúp sinh viên các tỉnh phía Bắc tiếp cận thông tin cũng như tài liệu học tiếng Anh, các chương trình trao đổi, dịch vụ tư vấn giáo dục Mỹ.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">13 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+            <li>
+                        <div id="xds-103"></div>
+
+            </li>
+</ul>
+<section class="dt-video-list dt-section dt-section--fit dt-section--video my-5">
+    <header class="dt-section__header">
+        <h3 class="dt-section__title">
+            <a title="Tin tức video" aria-label="Dân trí TV" class="clearfix" href="/video-page.htm">
+                <img src="https://cdnweb.dantri.com.vn/bundle/static/assets/lg_dantri_dktop_1.svg?v=1204181606" alt="Tin tức video"/>
+            </a>
+        </h3>
+    </header>
+    <div class="dt-section__body" video-group>
+        <ul class="dt-list dt-list--home-video">
+            <li>
+
+                            <div class="video-item video-item--highlight video-item--overlay">
+                <h2 class="video-item__title mt10" data-v-title>&quot;Thót tim&quot; cảnh máy bay Mỹ hạ cánh khẩn cấp xuống đường cao tốc</h2>
+                <div class="dt-thumbnail dt-thumbnail--16x9" data-video-id="130270"></div>
+
+            </div>
+
+
+            </li>
+                <li>
+                                <div class="video-item video-item--normal">
+                <a   video-playable="130251"   href="/video/phe-ong-trump-tung-video-cao-buoc-gian-lan-bau-cu-tai-georgia-130251.htm"  
+                    aria-label="video-Phe ông Trump tung video cáo buộc gian lận bầu cử tại Georgia"   
+                    title="Phe ông Trump tung video cáo buộc gian lận bầu cử tại Georgia"
+                    summary=""
+                    catname="Thế giới"
+                    article="0"
+                    class="video-item__avatar">
+                    <div class="dt-thumbnail dt-thumbnail--16x9">
+                        <div class="video-item-play-button"></div>
+                        <img alt="Phe ông Trump tung video cáo buộc gian lận bầu cử tại Georgia" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/308_172/thumb-video/2020/12/04/trump-1607050463955/0_00_48.jpg" src="https://icdn.dantri.com.vn/zoom/308_172/filters:quality(0)/thumb-video/2020/12/04/trump-1607050463955/0_00_48.jpg">
+                    </div>
+                    <div class="video-item__duration">
+01:36                        
+                    </div>
+                </a>
+                <div class="video-item__content">
+                    <h3 class="video-item__title">
+                        <a   video-playable="130251"   href="/video/phe-ong-trump-tung-video-cao-buoc-gian-lan-bau-cu-tai-georgia-130251.htm"   
+                            title="Phe ông Trump tung video cáo buộc gian lận bầu cử tại Georgia" 
+                            summary=""
+                            catname="Thế giới"
+                            catlink="/video/the-gioi.htm"
+                            article="0"
+                        >
+                            Phe ông Trump tung video cáo buộc gian lận bầu cử tại Georgia
+                        </a>
+                    </h3>
+                    <div class="video-cat-row">
+                        
+         
+                        
+             
+                    </div>
+                    
+                </div>
+            </div>
+
+
+                </li>
+                <li>
+                                <div class="video-item video-item--normal">
+                <a   video-playable="130126"   href="/video/ong-biden-di-tap-tenh-voi-giay-phau-thuat-sau-vu-nut-xuong-ban-chan-130126.htm"  
+                    aria-label="video-Ông Biden đi tập tễnh với giày phẫu thuật sau vụ nứt xương bàn chân"   
+                    title="Ông Biden đi tập tễnh với giày phẫu thuật sau vụ nứt xương bàn chân"
+                    summary=""
+                    catname="Thế giới"
+                    article="0"
+                    class="video-item__avatar">
+                    <div class="dt-thumbnail dt-thumbnail--16x9">
+                        <div class="video-item-play-button"></div>
+                        <img alt="Ông Biden đi tập tễnh với giày phẫu thuật sau vụ nứt xương bàn chân" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/308_172/thumb-video/2020/12/02/960-x-540-mp-42792610761549723286-1606871101362/0_00_13.jpg" src="https://icdn.dantri.com.vn/zoom/308_172/filters:quality(0)/thumb-video/2020/12/02/960-x-540-mp-42792610761549723286-1606871101362/0_00_13.jpg">
+                    </div>
+                    <div class="video-item__duration">
+00:25                        
+                    </div>
+                </a>
+                <div class="video-item__content">
+                    <h3 class="video-item__title">
+                        <a   video-playable="130126"   href="/video/ong-biden-di-tap-tenh-voi-giay-phau-thuat-sau-vu-nut-xuong-ban-chan-130126.htm"   
+                            title="Ông Biden đi tập tễnh với giày phẫu thuật sau vụ nứt xương bàn chân" 
+                            summary=""
+                            catname="Thế giới"
+                            catlink="/video/the-gioi.htm"
+                            article="0"
+                        >
+                            Ông Biden đi tập tễnh với giày phẫu thuật sau vụ nứt xương bàn chân
+                        </a>
+                    </h3>
+                    <div class="video-cat-row">
+                        
+         
+                        
+             
+                    </div>
+                    
+                </div>
+            </div>
+
+
+                </li>
+                <li>
+                                <div class="video-item video-item--normal">
+                <a   video-playable="130027"   href="/video/nguoi-bieu-tinh-phap-thieu-xe-hoi-dot-ngan-hang-phan-doi-du-luat-an-ninh-130027.htm"  
+                    aria-label="video-Người biểu tình Pháp thiêu xe hơi, đốt ngân hàng phản đối dự luật an ninh"   
+                    title="Người biểu tình Pháp thiêu xe hơi, đốt ngân hàng phản đối dự luật an ninh"
+                    summary=""
+                    catname="Thế giới"
+                    article="0"
+                    class="video-item__avatar">
+                    <div class="dt-thumbnail dt-thumbnail--16x9">
+                        <div class="video-item-play-button"></div>
+                        <img alt="Người biểu tình Pháp thiêu xe hơi, đốt ngân hàng phản đối dự luật an ninh" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/308_172/thumb-video/2020/11/29/640-x-360-mp-46028314262467986768-1606614729609/0_00_33.jpg" src="https://icdn.dantri.com.vn/zoom/308_172/filters:quality(0)/thumb-video/2020/11/29/640-x-360-mp-46028314262467986768-1606614729609/0_00_33.jpg">
+                    </div>
+                    <div class="video-item__duration">
+01:06                        
+                    </div>
+                </a>
+                <div class="video-item__content">
+                    <h3 class="video-item__title">
+                        <a   video-playable="130027"   href="/video/nguoi-bieu-tinh-phap-thieu-xe-hoi-dot-ngan-hang-phan-doi-du-luat-an-ninh-130027.htm"   
+                            title="Người biểu tình Pháp thiêu xe hơi, đốt ngân hàng phản đối dự luật an ninh" 
+                            summary=""
+                            catname="Thế giới"
+                            catlink="/video/the-gioi.htm"
+                            article="0"
+                        >
+                            Người biểu tình Pháp thiêu xe hơi, đốt ngân hàng phản đối dự luật an ninh
+                        </a>
+                    </h3>
+                    <div class="video-cat-row">
+                        
+         
+                        
+             
+                    </div>
+                    
+                </div>
+            </div>
+
+
+                </li>
+
+        </ul>
+    </div>
+</section>
+<ul class="dt-list dt-list--lg">          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|6"
+  href="/the-gioi/ong-biden-khong-quan-tam-viec-ong-trump-du-le-nham-chuc-20201204182551975.htm"
+  title="Ông Biden không quan tâm việc ông Trump dự lễ nhậm chức">
+  
+  Ông Biden không quan tâm việc ông Trump dự lễ nhậm chức    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|6"
+ class="news-item__avatar"   href="/the-gioi/ong-biden-khong-quan-tam-viec-ong-trump-du-le-nham-chuc-20201204182551975.htm"
+  title="Ông Biden không quan tâm việc ông Trump dự lễ nhậm chức">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Biden không quan tâm việc ông Trump dự lễ nhậm chức" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/biden-1607081051435.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/biden-1607081051435.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|6" class="news-item__sapo" title="Ông Biden không quan tâm việc ông Trump dự lễ nhậm chức" href="/the-gioi/ong-biden-khong-quan-tam-viec-ong-trump-du-le-nham-chuc-20201204182551975.htm">(Dân trí)&nbsp;- Ông Joe Biden nói rằng ông không quan tâm tới việc Tổng thống Donald Trump có tới dự lễ nhậm chức của ông vào tháng 1 năm sau hay không.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">14 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|7"
+  href="/the-gioi/thot-tim-canh-may-bay-my-ha-canh-khan-cap-xuong-duong-cao-toc-20201204155246263.htm"
+  title="&quot;Thót tim&quot; cảnh máy bay Mỹ hạ cánh khẩn cấp xuống đường cao tốc">
+  
+  &quot;Thót tim&quot; cảnh máy bay Mỹ hạ cánh khẩn cấp xuống đường cao tốc        <i class="news-title-icon ico-news-type-video"> </i>  
+  
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|7"
+ class="news-item__avatar"   href="/the-gioi/thot-tim-canh-may-bay-my-ha-canh-khan-cap-xuong-duong-cao-toc-20201204155246263.htm"
+  title="&quot;Thót tim&quot; cảnh máy bay Mỹ hạ cánh khẩn cấp xuống đường cao tốc">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="&quot;Thót tim&quot; cảnh máy bay Mỹ hạ cánh khẩn cấp xuống đường cao tốc" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/capture-1607071672565.gif" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/capture-1607071672565.gif">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|7" class="news-item__sapo" title="&quot;Thót tim&quot; cảnh máy bay Mỹ hạ cánh khẩn cấp xuống đường cao tốc" href="/the-gioi/thot-tim-canh-may-bay-my-ha-canh-khan-cap-xuong-duong-cao-toc-20201204155246263.htm">(Dân trí)&nbsp;- Một phi công đã quyết định hạ cánh khẩn cấp máy bay xuống đường cao tốc đông xe qua lại ở bang Minnesota, Mỹ, dẫn tới va chạm với một ô tô.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">15 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|8"
+  href="/the-gioi/lieu-ong-trump-co-the-an-xa-cho-chinh-minh-20201204160224979.htm"
+  title="Liệu ông Trump có thể ân xá cho chính mình?">
+  
+  Liệu ông Trump có thể ân xá cho chính mình?    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|8"
+ class="news-item__avatar"   href="/the-gioi/lieu-ong-trump-co-the-an-xa-cho-chinh-minh-20201204160224979.htm"
+  title="Liệu ông Trump có thể ân xá cho chính mình?">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Liệu ông Trump có thể ân xá cho chính mình?" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/11/20/trump-1605852531047.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/11/20/trump-1605852531047.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|8" class="news-item__sapo" title="Liệu ông Trump có thể ân xá cho chính mình?" href="/the-gioi/lieu-ong-trump-co-the-an-xa-cho-chinh-minh-20201204160224979.htm">(Dân trí)&nbsp;- Theo các chuyên gia luật, quyền lực ân xá của tổng thống Mỹ là rất lớn, nhưng cũng có những giới hạn nhất định.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">16 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|9"
+  href="/the-gioi/ong-biden-noi-trung-quoc-phai-hanh-xu-theo-chuan-muc-quoc-te-20201204150100094.htm"
+  title="Ông Biden nói Trung Quốc phải hành xử theo &quot;chuẩn mực quốc tế&quot;">
+  
+  Ông Biden nói Trung Quốc phải hành xử theo &quot;chuẩn mực quốc tế&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|9"
+ class="news-item__avatar"   href="/the-gioi/ong-biden-noi-trung-quoc-phai-hanh-xu-theo-chuan-muc-quoc-te-20201204150100094.htm"
+  title="Ông Biden nói Trung Quốc phải hành xử theo &quot;chuẩn mực quốc tế&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Biden nói Trung Quốc phải hành xử theo &quot;chuẩn mực quốc tế&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/11/30/biden-1606709042671.jpeg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/11/30/biden-1606709042671.jpeg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|9" class="news-item__sapo" title="Ông Biden nói Trung Quốc phải hành xử theo &quot;chuẩn mực quốc tế&quot;" href="/the-gioi/ong-biden-noi-trung-quoc-phai-hanh-xu-theo-chuan-muc-quoc-te-20201204150100094.htm">(Dân trí)&nbsp;- Ông Joe Biden tuyên bố Trung Quốc phải hành xử theo "chuẩn mực quốc tế" khi được hỏi về khả năng trừng phạt Bắc Kinh vì đại dịch Covid-19.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">18 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+                <li>
+                                <div id="xds-104"></div>
+
+                </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right news-item--large">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|10"
+  href="/the-gioi/malaysia-huy-du-an-105-ty-usd-lien-quan-toi-trung-quoc-20201204142436583.htm"
+  title="Malaysia hủy dự án 10,5 tỷ USD liên quan tới Trung Quốc">
+  
+  Malaysia hủy dự án 10,5 tỷ USD liên quan tới Trung Quốc    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|10"
+ class="news-item__avatar"   href="/the-gioi/malaysia-huy-du-an-105-ty-usd-lien-quan-toi-trung-quoc-20201204142436583.htm"
+  title="Malaysia hủy dự án 10,5 tỷ USD liên quan tới Trung Quốc">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Malaysia hủy dự án 10,5 tỷ USD liên quan tới Trung Quốc" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/920_612/2020/12/04/https-3-a-2-f-2-fs-3-apnortheast-1-amazonawscom-2-fpshexftnikkei-3937-bb-42-fimages-2-f-22-f-62-f-12-f-22-f-309721624-eng-gb-2-fmelaka-2-1607066508207.jpg" src="https://icdn.dantri.com.vn/zoom/920_612/filters:quality(0)/2020/12/04/https-3-a-2-f-2-fs-3-apnortheast-1-amazonawscom-2-fpshexftnikkei-3937-bb-42-fimages-2-f-22-f-62-f-12-f-22-f-309721624-eng-gb-2-fmelaka-2-1607066508207.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|10" class="news-item__sapo" title="Malaysia hủy dự án 10,5 tỷ USD liên quan tới Trung Quốc" href="/the-gioi/malaysia-huy-du-an-105-ty-usd-lien-quan-toi-trung-quoc-20201204142436583.htm">(Dân trí)&nbsp;- Malaysia đã hủy dự án cơ sở hạ tầng 10,5 tỷ USD hợp tác với Trung Quốc, một dấu hiệu cho thấy Kuala Lumpur dường như đang giám sát chặt hơn hoạt động của các công ty Trung Quốc.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">19 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|11"
+  href="/the-gioi/tong-thong-trump-co-the-pha-vo-moi-tien-le-nhung-ngay-cuoi-nhiem-ky-20201203153301780.htm"
+  title="Tổng thống Trump có thể phá vỡ mọi tiền lệ những ngày cuối nhiệm kỳ">
+  
+  Tổng thống Trump có thể phá vỡ mọi tiền lệ những ngày cuối nhiệm kỳ    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|11"
+ class="news-item__avatar"   href="/the-gioi/tong-thong-trump-co-the-pha-vo-moi-tien-le-nhung-ngay-cuoi-nhiem-ky-20201203153301780.htm"
+  title="Tổng thống Trump có thể phá vỡ mọi tiền lệ những ngày cuối nhiệm kỳ">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Tổng thống Trump có thể phá vỡ mọi tiền lệ những ngày cuối nhiệm kỳ" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/03/donald-trump-1606984324181.jpeg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/03/donald-trump-1606984324181.jpeg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|11" class="news-item__sapo" title="Tổng thống Trump có thể phá vỡ mọi tiền lệ những ngày cuối nhiệm kỳ" href="/the-gioi/tong-thong-trump-co-the-pha-vo-moi-tien-le-nhung-ngay-cuoi-nhiem-ky-20201203153301780.htm">(Dân trí)&nbsp;- Tổng thống Donald Trump được dự đoán sẽ thực hiện hàng loạt kế hoạch, bao gồm biện pháp bảo vệ bản thân và gia đình, trước khi ông rời khỏi Nhà Trắng.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">20 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|12"
+  href="/the-gioi/ong-trump-lap-ky-luc-quyen-tien-cho-no-luc-dao-nguoc-ket-qua-bau-cu-20201204125818941.htm"
+  title="Ông Trump lập kỷ lục quyên tiền cho nỗ lực đảo ngược kết quả bầu cử">
+  
+  Ông Trump lập kỷ lục quyên tiền cho nỗ lực đảo ngược kết quả bầu cử    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|12"
+ class="news-item__avatar"   href="/the-gioi/ong-trump-lap-ky-luc-quyen-tien-cho-no-luc-dao-nguoc-ket-qua-bau-cu-20201204125818941.htm"
+  title="Ông Trump lập kỷ lục quyên tiền cho nỗ lực đảo ngược kết quả bầu cử">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Trump lập kỷ lục quyên tiền cho nỗ lực đảo ngược kết quả bầu cử" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/11/05/trump-1604545435425.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/11/05/trump-1604545435425.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|12" class="news-item__sapo" title="Ông Trump lập kỷ lục quyên tiền cho nỗ lực đảo ngược kết quả bầu cử" href="/the-gioi/ong-trump-lap-ky-luc-quyen-tien-cho-no-luc-dao-nguoc-ket-qua-bau-cu-20201204125818941.htm">(Dân trí)&nbsp;- Nhà tài trợ tiếp tục đổ tiền ủng hộ Tổng thống Mỹ Donald Trump khi ông tiếp tục theo đuổi cuộc chiến pháp lý nhằm đảo ngược kết quả bầu cử.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">21 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|13"
+  href="/the-gioi/my-siet-thi-thuc-voi-cong-dan-trung-quoc-20201204112528670.htm"
+  title="Mỹ siết thị thực với công dân Trung Quốc">
+  
+  Mỹ siết thị thực với công dân Trung Quốc    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|13"
+ class="news-item__avatar"   href="/the-gioi/my-siet-thi-thuc-voi-cong-dan-trung-quoc-20201204112528670.htm"
+  title="Mỹ siết thị thực với công dân Trung Quốc">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Mỹ siết thị thực với công dân Trung Quốc" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/trung-quo-1607055721847.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/trung-quo-1607055721847.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|13" class="news-item__sapo" title="Mỹ siết thị thực với công dân Trung Quốc" href="/the-gioi/my-siet-thi-thuc-voi-cong-dan-trung-quoc-20201204112528670.htm">(Dân trí)&nbsp;- Mỹ vừa ban hành quy định mới về nhập cảnh đối với các thành viên của đảng Cộng sản Trung Quốc giữa lúc căng thẳng song phương leo thang.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">22 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|14"
+  href="/the-gioi/my-can-mot-cuoc-cach-mang-cong-nghe-cao-de-dau-voi-trung-quoc-20201204105623858.htm"
+  title="&quot;Mỹ cần một cuộc cách mạng công nghệ cao để đấu với Trung Quốc&quot;">
+  
+  &quot;Mỹ cần một cuộc cách mạng công nghệ cao để đấu với Trung Quốc&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|14"
+ class="news-item__avatar"   href="/the-gioi/my-can-mot-cuoc-cach-mang-cong-nghe-cao-de-dau-voi-trung-quoc-20201204105623858.htm"
+  title="&quot;Mỹ cần một cuộc cách mạng công nghệ cao để đấu với Trung Quốc&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="&quot;Mỹ cần một cuộc cách mạng công nghệ cao để đấu với Trung Quốc&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/07/17/ussnimitz-1800-1594971263958.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/07/17/ussnimitz-1800-1594971263958.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|14" class="news-item__sapo" title="&quot;Mỹ cần một cuộc cách mạng công nghệ cao để đấu với Trung Quốc&quot;" href="/the-gioi/my-can-mot-cuoc-cach-mang-cong-nghe-cao-de-dau-voi-trung-quoc-20201204105623858.htm">(Dân trí)&nbsp;- Một tướng cấp cao Mỹ cho rằng nước này cần phát triển công nghệ cao trong tác chiến, cũng như triển khai thêm các lực lượng trang bị tên lửa tầm xa ở châu Á để đối phó với Trung Quốc.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">22 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+                <li>
+                                <div id="xds-106"></div>
+
+                </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right news-item--large">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|15"
+  href="/the-gioi/nghi-si-9-nuoc-bi-to-tham-gia-tiec-thac-loan-giua-dich-covid-19-20201204094822542.htm"
+  title="Nghị sĩ 9 nước bị tố tham gia &quot;tiệc thác loạn&quot; giữa dịch Covid-19">
+  
+  Nghị sĩ 9 nước bị tố tham gia &quot;tiệc thác loạn&quot; giữa dịch Covid-19    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|15"
+ class="news-item__avatar"   href="/the-gioi/nghi-si-9-nuoc-bi-to-tham-gia-tiec-thac-loan-giua-dich-covid-19-20201204094822542.htm"
+  title="Nghị sĩ 9 nước bị tố tham gia &quot;tiệc thác loạn&quot; giữa dịch Covid-19">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Nghị sĩ 9 nước bị tố tham gia &quot;tiệc thác loạn&quot; giữa dịch Covid-19" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/920_612/2020/12/04/tiec-covid-1607049980931.jpg" src="https://icdn.dantri.com.vn/zoom/920_612/filters:quality(0)/2020/12/04/tiec-covid-1607049980931.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|15" class="news-item__sapo" title="Nghị sĩ 9 nước bị tố tham gia &quot;tiệc thác loạn&quot; giữa dịch Covid-19" href="/the-gioi/nghi-si-9-nuoc-bi-to-tham-gia-tiec-thac-loan-giua-dich-covid-19-20201204094822542.htm">(Dân trí)&nbsp;- Một người tổ chức tiệc thác loạn ở Brussels (Bỉ) bị phát giác tuần trước cho biết nhiều khách mời trong các bữa tiệc mà anh này tổ chức là nghị sĩ đến từ 9 quốc gia.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">23 giờ trước</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|16"
+  href="/the-gioi/phe-ong-trump-tung-video-to-gian-lan-bau-cu-tai-georgia-20201204095612939.htm"
+  title="Phe ông Trump tung video &quot;tố&quot; gian lận bầu cử tại Georgia">
+  
+  Phe ông Trump tung video &quot;tố&quot; gian lận bầu cử tại Georgia        <i class="news-title-icon ico-news-type-video"> </i>  
+  
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|16"
+ class="news-item__avatar"   href="/the-gioi/phe-ong-trump-tung-video-to-gian-lan-bau-cu-tai-georgia-20201204095612939.htm"
+  title="Phe ông Trump tung video &quot;tố&quot; gian lận bầu cử tại Georgia">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Phe ông Trump tung video &quot;tố&quot; gian lận bầu cử tại Georgia" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/01/trump-1606785302958.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/01/trump-1606785302958.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|16" class="news-item__sapo" title="Phe ông Trump tung video &quot;tố&quot; gian lận bầu cử tại Georgia" href="/the-gioi/phe-ong-trump-tung-video-to-gian-lan-bau-cu-tai-georgia-20201204095612939.htm">(Dân trí)&nbsp;- Đội ngũ pháp lý của Tổng thống Donald Trump đã công bố video cáo buộc gian lận bầu cử tại Georgia dù giới chức bang này đã lên tiếng bác bỏ.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">Thứ Sáu 04/12/2020 - 10:03</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|17"
+  href="/the-gioi/giam-doc-truyen-thong-nha-trang-tu-chuc-tim-co-hoi-moi-20201204085707735.htm"
+  title="Giám đốc truyền thông Nhà Trắng từ chức &quot;tìm cơ hội mới&quot;">
+  
+  Giám đốc truyền thông Nhà Trắng từ chức &quot;tìm cơ hội mới&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|17"
+ class="news-item__avatar"   href="/the-gioi/giam-doc-truyen-thong-nha-trang-tu-chuc-tim-co-hoi-moi-20201204085707735.htm"
+  title="Giám đốc truyền thông Nhà Trắng từ chức &quot;tìm cơ hội mới&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Giám đốc truyền thông Nhà Trắng từ chức &quot;tìm cơ hội mới&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/85408116100162058088470016205800742001-vs-1607046814141.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/85408116100162058088470016205800742001-vs-1607046814141.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|17" class="news-item__sapo" title="Giám đốc truyền thông Nhà Trắng từ chức &quot;tìm cơ hội mới&quot;" href="/the-gioi/giam-doc-truyen-thong-nha-trang-tu-chuc-tim-co-hoi-moi-20201204085707735.htm">(Dân trí)&nbsp;- Alyssa Farah đã nộp đơn xin từ chức Giám đốc truyền thông Nhà Trắng, dấu hiệu mà giới quan sát cho rằng cô có thể đã ngầm nhận ra Tổng thống Mỹ Donald Trump có ít cơ hội thắng nhiệm kỳ 2.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">Thứ Sáu 04/12/2020 - 09:13</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|18"
+  href="/the-gioi/my-co-the-dang-dam-phan-de-giam-doc-tai-chinh-huawei-tro-ve-trung-quoc-20201204085250687.htm"
+  title="Mỹ có thể đang đàm phán để Giám đốc tài chính Huawei trở về Trung Quốc">
+  
+  Mỹ có thể đang đàm phán để Giám đốc tài chính Huawei trở về Trung Quốc    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|18"
+ class="news-item__avatar"   href="/the-gioi/my-co-the-dang-dam-phan-de-giam-doc-tai-chinh-huawei-tro-ve-trung-quoc-20201204085250687.htm"
+  title="Mỹ có thể đang đàm phán để Giám đốc tài chính Huawei trở về Trung Quốc">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Mỹ có thể đang đàm phán để Giám đốc tài chính Huawei trở về Trung Quốc" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/manh-van-chu-1607046702779.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/manh-van-chu-1607046702779.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|18" class="news-item__sapo" title="Mỹ có thể đang đàm phán để Giám đốc tài chính Huawei trở về Trung Quốc" href="/the-gioi/my-co-the-dang-dam-phan-de-giam-doc-tai-chinh-huawei-tro-ve-trung-quoc-20201204085250687.htm">(Dân trí)&nbsp;- Bộ Tư pháp Mỹ có thể đang thảo luận một thỏa thuận với các luật sư của Giám đốc tài chính Huawei Mạnh Vãn Chu để cho phép bà trở về nước.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">Thứ Sáu 04/12/2020 - 09:00</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|19"
+  href="/the-gioi/ong-trump-tin-co-the-kiem-them-90000-phieu-bau-vi-sai-sot-o-arizona-20201204081150996.htm"
+  title="Ông Trump tin có thể kiếm thêm 90.000 phiếu bầu vì sai sót ở Arizona">
+  
+  Ông Trump tin có thể kiếm thêm 90.000 phiếu bầu vì sai sót ở Arizona    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|19"
+ class="news-item__avatar"   href="/the-gioi/ong-trump-tin-co-the-kiem-them-90000-phieu-bau-vi-sai-sot-o-arizona-20201204081150996.htm"
+  title="Ông Trump tin có thể kiếm thêm 90.000 phiếu bầu vì sai sót ở Arizona">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Trump tin có thể kiếm thêm 90.000 phiếu bầu vì sai sót ở Arizona" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/1-1607044228997.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/1-1607044228997.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|19" class="news-item__sapo" title="Ông Trump tin có thể kiếm thêm 90.000 phiếu bầu vì sai sót ở Arizona" href="/the-gioi/ong-trump-tin-co-the-kiem-them-90000-phieu-bau-vi-sai-sot-o-arizona-20201204081150996.htm">(Dân trí)&nbsp;- Tổng thống Mỹ Donald Trump tin rằng ông có thể có thêm ít nhất 90.000 phiếu bầu để thắng ở bang chiến địa Arizona sau khi có những sai sót bị phát hiện ở bang này.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">Thứ Sáu 04/12/2020 - 08:28</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right news-item--large">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|20"
+  href="/the-gioi/my-goi-trung-quoc-la-moi-de-doa-lon-nhat-20201204080952126.htm"
+  title="Mỹ gọi Trung Quốc là &quot;mối đe dọa lớn nhất&quot;">
+  
+  Mỹ gọi Trung Quốc là &quot;mối đe dọa lớn nhất&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|20"
+ class="news-item__avatar"   href="/the-gioi/my-goi-trung-quoc-la-moi-de-doa-lon-nhat-20201204080952126.htm"
+  title="Mỹ gọi Trung Quốc là &quot;mối đe dọa lớn nhất&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Mỹ gọi Trung Quốc là &quot;mối đe dọa lớn nhất&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/920_612/2020/12/04/my-1607044068548.jpg" src="https://icdn.dantri.com.vn/zoom/920_612/filters:quality(0)/2020/12/04/my-1607044068548.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|20" class="news-item__sapo" title="Mỹ gọi Trung Quốc là &quot;mối đe dọa lớn nhất&quot;" href="/the-gioi/my-goi-trung-quoc-la-moi-de-doa-lon-nhat-20201204080952126.htm">(Dân trí)&nbsp;- Giám đốc Tình báo Quốc gia Mỹ cho rằng Trung Quốc là mối đe dọa lớn nhất đối với an ninh quốc gia Mỹ.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">Thứ Sáu 04/12/2020 - 08:24</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|21"
+  href="/the-gioi/hon-10000-nguoi-chet-vi-covid-19-moi-ngay-20201204071132993.htm"
+  title="Hơn 10.000 người chết vì Covid-19 mỗi ngày">
+  
+  Hơn 10.000 người chết vì Covid-19 mỗi ngày    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|21"
+ class="news-item__avatar"   href="/the-gioi/hon-10000-nguoi-chet-vi-covid-19-moi-ngay-20201204071132993.htm"
+  title="Hơn 10.000 người chết vì Covid-19 mỗi ngày">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Hơn 10.000 người chết vì Covid-19 mỗi ngày" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/my-1607040588713.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/my-1607040588713.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|21" class="news-item__sapo" title="Hơn 10.000 người chết vì Covid-19 mỗi ngày" href="/the-gioi/hon-10000-nguoi-chet-vi-covid-19-moi-ngay-20201204071132993.htm">(Dân trí)&nbsp;- Hơn 1,5 triệu người đã tử vong vì Covid-19 trên toàn thế giới, trong khi một số quốc gia phát triển đã bắt đầu triển khai tiêm chủng vắc xin trên quy mô lớn.</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">Thứ Sáu 04/12/2020 - 07:31</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+          <li>
+            
+    <div class="news-item news-item--stream news-item--left2right">
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|MainList|22"
+  href="/the-gioi/ivanka-tung-bang-chung-vo-toi-trong-vu-kien-quy-nham-chuc-cua-ong-trump-20201204070915957.htm"
+  title="Ivanka tung bằng chứng vô tội trong vụ kiện quỹ nhậm chức của ông Trump">
+  
+  Ivanka tung bằng chứng vô tội trong vụ kiện quỹ nhậm chức của ông Trump    
+</a>
+
+
+  
+           
+            </h3>
+            
+                 
+
+
+<a  data-utm="Cate_TheGioi|MainList|22"
+ class="news-item__avatar"   href="/the-gioi/ivanka-tung-bang-chung-vo-toi-trong-vu-kien-quy-nham-chuc-cua-ong-trump-20201204070915957.htm"
+  title="Ivanka tung bằng chứng vô tội trong vụ kiện quỹ nhậm chức của ông Trump">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ivanka tung bằng chứng vô tội trong vụ kiện quỹ nhậm chức của ông Trump" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2020/12/04/ivanka-1607040480259.jpg" src="https://icdn.dantri.com.vn/zoom/480_320/filters:quality(0)/2020/12/04/ivanka-1607040480259.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+                            <a data-utm="Cate_TheGioi|MainList|22" class="news-item__sapo" title="Ivanka tung bằng chứng vô tội trong vụ kiện quỹ nhậm chức của ông Trump" href="/the-gioi/ivanka-tung-bang-chung-vo-toi-trong-vu-kien-quy-nham-chuc-cua-ong-trump-20201204070915957.htm">(Dân trí)&nbsp;- Ivanka, con gái của Tổng thống Mỹ Donald Trump, nói rằng vụ kiện lạm dụng quỹ nhậm chức tổng thống nhằm vào tập đoàn gia đình cô là một âm mưu mang "động cơ chính trị".</a>
+                                         <div class="news-item__meta">
+                                            <span class="news-item__time">Thứ Sáu 04/12/2020 - 07:15</span>
+                </div>
+                    </div>
+    </div>
+
+          </li>
+      </ul>
+      <input type="hidden" name="hidCategoryPath" id="hidCategoryPath" value="/the-gioi"/>
+      <input type="hidden" name="hidCurrentPage" id="hidCurrentPage" value="1"/>
+      <input type="hidden" name="hidCurrentDate" id="hidCurrentDate" value=""/>
+        <ul class="list-unstyled dt-category-actions">
+          
+      <li>
+        <a class="disabled btn btn-light btn-block btn-lg" href="/the-gioi.htm">
+          Trang trước
+        </a>
+      </li>
+     
+          <li>
+            <a category-by-date class="btn btn-light btn-block btn-lg " href="">
+              Xem theo ngày
+            </a>
+          </li>
+
+          
+      <li>
+        <a class="text-primary btn btn-light btn-block btn-lg" href="/the-gioi/trang-2.htm">
+          Trang sau
+        </a>
+      </li>
+     
+
+        </ul>
+      
+    </div>
+      <div class="col col--secondary custom-xds" >
+                    <section data-cate-id="-1" class="dt-section dt-section--box">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="Tiêu điểm" href="">
+                                        Tiêu điểm
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_TieuDiem|1"
+ class="news-item__avatar"   href="/the-gioi/ong-trump-kien-o-bang-wisconsin-cao-buoc-220000-phieu-bi-anh-huong-20201201221352553.htm"
+  title="Ông Trump kiện ở bang Wisconsin, cáo buộc 220.000 phiếu bị ảnh hưởng">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Trump kiện ở bang Wisconsin, cáo buộc 220.000 phiếu bị ảnh hưởng" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/12/01/464676604-1606835237134.jpg" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/12/01/464676604-1606835237134.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_TieuDiem|1"
+  href="/the-gioi/ong-trump-kien-o-bang-wisconsin-cao-buoc-220000-phieu-bi-anh-huong-20201201221352553.htm"
+  title="Ông Trump kiện ở bang Wisconsin, cáo buộc 220.000 phiếu bị ảnh hưởng">
+  
+  Ông Trump kiện ở bang Wisconsin, cáo buộc 220.000 phiếu bị ảnh hưởng    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+                </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_TieuDiem|2" title="Tổng thống Trump &quot;chiến đấu&quot; vì 74 triệu người Mỹ bỏ phiếu cho ông" href="/the-gioi/tong-thong-trump-chien-dau-vi-74-trieu-nguoi-my-bo-phieu-cho-ong-20201201081626903.htm">
+                                    Tổng thống Trump &quot;chiến đấu&quot; vì 74 triệu người Mỹ bỏ phiếu cho ông
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_TieuDiem|3" title="Đội ngũ kinh tế đặc biệt được ông Biden &quot;chọn mặt gửi vàng&quot;" href="/the-gioi/doi-ngu-kinh-te-dac-biet-duoc-ong-biden-chon-mat-gui-vang-20201201073415450.htm">
+                                    Đội ngũ kinh tế đặc biệt được ông Biden &quot;chọn mặt gửi vàng&quot;
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_TieuDiem|4" title="Tòa Tối cao Pennsylvania chặn nỗ lực của phe Cộng hòa hủy 2,5 triệu phiếu" href="/the-gioi/toa-toi-cao-pennsylvania-chan-no-luc-cua-phe-cong-hoa-huy-25-trieu-phieu-20201129110818606.htm">
+                                    Tòa Tối cao Pennsylvania chặn nỗ lực của phe Cộng hòa hủy 2,5 triệu phiếu
+                                </a>
+                            </h3>
+                        </li>
+            </ul>
+        </div>
+    </section>
+               
+            <div custom-cat-box-before-992></div>
+    <section data-cate-id="992" class="dt-section dt-section--box dt-section--primary ">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="Bầu cử tổng thống Mỹ 2020" href="/the-gioi/bau-cu-tong-thong-my-2020.htm">
+                                        Bầu cử tổng thống Mỹ 2020
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_BauCuTongThongMy2020|1"
+ class="news-item__avatar"   href="/the-gioi/ong-biden-chinh-thuc-du-phieu-dai-cu-tri-de-dac-cu-20201205094130912.htm"
+  title="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/12/01/biden-2-1606791839239.jpg" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/12/01/biden-2-1606791839239.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_BauCuTongThongMy2020|1"
+  href="/the-gioi/ong-biden-chinh-thuc-du-phieu-dai-cu-tri-de-dac-cu-20201205094130912.htm"
+  title="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử">
+  
+  Ông Biden chính thức đủ phiếu đại cử tri để đắc cử    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Box_BauCuTongThongMy2020|1" class="news-item__sapo" title="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử" href="/the-gioi/ong-biden-chinh-thuc-du-phieu-dai-cu-tri-de-dac-cu-20201205094130912.htm">(Dân trí)&nbsp;- Ứng viên tổng thống đảng Dân chủ Mỹ Joe Biden chính thức nhận được cam kết ủng hộ của hơn 270 đại cử tri sau khi California xác nhận kết quả bầu cử tại bang này.</a>
+                                             </div>
+    </div>
+
+                </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_BauCuTongThongMy2020|2" title="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;" href="/the-gioi/trump-dinh-tai-tranh-cu-nam-2024-dang-cong-hoa-roi-vao-the-tien-thoai-luong-nan-20201205070611777.htm">
+                                    Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_BauCuTongThongMy2020|3" title="Thống đốc Georgia đề nghị thanh tra kết quả bầu cử sau video tố gian lận" href="/the-gioi/thong-doc-georgia-de-nghi-thanh-tra-ket-qua-bau-cu-sau-video-to-gian-lan-20201205065805137.htm">
+                                    Thống đốc Georgia đề nghị thanh tra kết quả bầu cử sau video tố gian lận
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_BauCuTongThongMy2020|4" title="Ông Biden không quan tâm việc ông Trump dự lễ nhậm chức" href="/the-gioi/ong-biden-khong-quan-tam-viec-ong-trump-du-le-nham-chuc-20201204182551975.htm">
+                                    Ông Biden không quan tâm việc ông Trump dự lễ nhậm chức
+                                </a>
+                            </h3>
+                        </li>
+            </ul>
+        </div>
+    </section>
+            <div custom-cat-box-before-140></div>
+    <section data-cate-id="140" class="dt-section dt-section--box dt-section--primary ">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="Châu Á" href="/the-gioi/chau-a.htm">
+                                        Châu Á
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_ChauA|1"
+ class="news-item__avatar"   href="/the-gioi/trung-quoc-dat-dieu-kien-mo-lai-lanh-su-quan-my-20201204222756612.htm"
+  title="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/12/04/trung-quoc-1607095498934.png" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/12/04/trung-quoc-1607095498934.png">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_ChauA|1"
+  href="/the-gioi/trung-quoc-dat-dieu-kien-mo-lai-lanh-su-quan-my-20201204222756612.htm"
+  title="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ">
+  
+  Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Box_ChauA|1" class="news-item__sapo" title="Trung Quốc đặt điều kiện mở lại lãnh sự quán Mỹ" href="/the-gioi/trung-quoc-dat-dieu-kien-mo-lai-lanh-su-quan-my-20201204222756612.htm">(Dân trí)&nbsp;- Trung Quốc tuyên bố nước này sẽ xem xét mở lại lãnh sự quán Mỹ nếu Washington sẵn sàng thực hiện hành động tương tự.</a>
+                                             </div>
+    </div>
+
+                </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_ChauA|2" title="Hàng loạt quốc gia chỉ trích Trung Quốc vụ đăng ảnh gây tranh cãi" href="/the-gioi/hang-loat-quoc-gia-chi-trich-trung-quoc-vu-dang-anh-gay-tranh-cai-20201204215008432.htm">
+                                    Hàng loạt quốc gia chỉ trích Trung Quốc vụ đăng ảnh gây tranh cãi
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_ChauA|3" title="Ông Biden nói Trung Quốc phải hành xử theo &quot;chuẩn mực quốc tế&quot;" href="/the-gioi/ong-biden-noi-trung-quoc-phai-hanh-xu-theo-chuan-muc-quoc-te-20201204150100094.htm">
+                                    Ông Biden nói Trung Quốc phải hành xử theo &quot;chuẩn mực quốc tế&quot;
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_ChauA|4" title="Malaysia hủy dự án 10,5 tỷ USD liên quan tới Trung Quốc" href="/the-gioi/malaysia-huy-du-an-105-ty-usd-lien-quan-toi-trung-quoc-20201204142436583.htm">
+                                    Malaysia hủy dự án 10,5 tỷ USD liên quan tới Trung Quốc
+                                </a>
+                            </h3>
+                        </li>
+            </ul>
+        </div>
+    </section>
+            <div custom-cat-box-before-138></div>
+    <section data-cate-id="138" class="dt-section dt-section--box dt-section--primary ">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="EU &amp; Nga" href="/the-gioi/eu-nga.htm">
+                                        EU &amp; Nga
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_EUNga|1"
+ class="news-item__avatar"   href="/the-gioi/nuoc-anh-boi-roi-vi-67-ty-usd-mat-tich-20201205082502524.htm"
+  title="Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/12/05/anh-1607131391701.jpg" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/12/05/anh-1607131391701.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_EUNga|1"
+  href="/the-gioi/nuoc-anh-boi-roi-vi-67-ty-usd-mat-tich-20201205082502524.htm"
+  title="Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;">
+  
+  Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Box_EUNga|1" class="news-item__sapo" title="Nước Anh bối rối vì 67 tỷ USD &quot;mất tích&quot;" href="/the-gioi/nuoc-anh-boi-roi-vi-67-ty-usd-mat-tich-20201205082502524.htm">(Dân trí)&nbsp;- Giới nghị sĩ Anh đã đề nghị ngân hàng trung ương nước này điều tra để làm rõ 50 tỷ bảng Anh (hơn 67 tỷ USD) "biến mất" khỏi lưu thông dù nhu cầu tích trữ tiền mặt giảm mạnh những năm gần đây.</a>
+                                             </div>
+    </div>
+
+                </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_EUNga|2" title="Quan chức cấp cao Na Uy từ chức vì vợ là người Trung Quốc" href="/the-gioi/quan-chuc-cap-cao-na-uy-tu-chuc-vi-vo-la-nguoi-trung-quoc-20201205075559425.htm">
+                                    Quan chức cấp cao Na Uy từ chức vì vợ là người Trung Quốc
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_EUNga|3" title="Nghị sĩ 9 nước bị tố tham gia &quot;tiệc thác loạn&quot; giữa dịch Covid-19" href="/the-gioi/nghi-si-9-nuoc-bi-to-tham-gia-tiec-thac-loan-giua-dich-covid-19-20201204094822542.htm">
+                                    Nghị sĩ 9 nước bị tố tham gia &quot;tiệc thác loạn&quot; giữa dịch Covid-19
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_EUNga|4" title="Mỹ có thể đang đàm phán để Giám đốc tài chính Huawei trở về Trung Quốc" href="/the-gioi/my-co-the-dang-dam-phan-de-giam-doc-tai-chinh-huawei-tro-ve-trung-quoc-20201204085250687.htm">
+                                    Mỹ có thể đang đàm phán để Giám đốc tài chính Huawei trở về Trung Quốc
+                                </a>
+                            </h3>
+                        </li>
+            </ul>
+        </div>
+    </section>
+            <div custom-cat-box-before-171></div>
+    <section data-cate-id="171" class="dt-section dt-section--box dt-section--primary ">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="Châu Mỹ" href="/the-gioi/chau-my.htm">
+                                        Châu Mỹ
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_ChauMy|1"
+ class="news-item__avatar"   href="/the-gioi/ong-biden-chinh-thuc-du-phieu-dai-cu-tri-de-dac-cu-20201205094130912.htm"
+  title="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/12/01/biden-2-1606791839239.jpg" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/12/01/biden-2-1606791839239.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_ChauMy|1"
+  href="/the-gioi/ong-biden-chinh-thuc-du-phieu-dai-cu-tri-de-dac-cu-20201205094130912.htm"
+  title="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử">
+  
+  Ông Biden chính thức đủ phiếu đại cử tri để đắc cử    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Box_ChauMy|1" class="news-item__sapo" title="Ông Biden chính thức đủ phiếu đại cử tri để đắc cử" href="/the-gioi/ong-biden-chinh-thuc-du-phieu-dai-cu-tri-de-dac-cu-20201205094130912.htm">(Dân trí)&nbsp;- Ứng viên tổng thống đảng Dân chủ Mỹ Joe Biden chính thức nhận được cam kết ủng hộ của hơn 270 đại cử tri sau khi California xác nhận kết quả bầu cử tại bang này.</a>
+                                             </div>
+    </div>
+
+                </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_ChauMy|2" title="Mỹ gia tăng trừng phạt quan chức Trung Quốc" href="/the-gioi/my-gia-tang-trung-phat-quan-chuc-trung-quoc-20201205090744324.htm">
+                                    Mỹ gia tăng trừng phạt quan chức Trung Quốc
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_ChauMy|3" title="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;" href="/the-gioi/trump-dinh-tai-tranh-cu-nam-2024-dang-cong-hoa-roi-vao-the-tien-thoai-luong-nan-20201205070611777.htm">
+                                    Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_ChauMy|4" title="Mỹ có thể mở rộng &quot;tẩy chay&quot; các hãng công nghệ Trung Quốc trên toàn cầu" href="/the-gioi/my-co-the-mo-rong-tay-chay-cac-hang-cong-nghe-trung-quoc-tren-toan-cau-20201205070136553.htm">
+                                    Mỹ có thể mở rộng &quot;tẩy chay&quot; các hãng công nghệ Trung Quốc trên toàn cầu
+                                </a>
+                            </h3>
+                        </li>
+            </ul>
+        </div>
+    </section>
+            <div custom-cat-box-before-172></div>
+    <section data-cate-id="172" class="dt-section dt-section--box dt-section--primary ">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="Điểm nóng" href="/the-gioi/diem-nong.htm">
+                                        Điểm nóng
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_DiemNong|1"
+ class="news-item__avatar"   href="/the-gioi/nhung-cuoc-xung-dot-dot-nong-the-gioi-nam-2020-20201203173049527.htm"
+  title="Những cuộc xung đột &quot;đốt nóng&quot; thế giới năm 2020">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Những cuộc xung đột &quot;đốt nóng&quot; thế giới năm 2020" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/12/03/my-11606990923082-1607002697551.jpg" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/12/03/my-11606990923082-1607002697551.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_DiemNong|1"
+  href="/the-gioi/nhung-cuoc-xung-dot-dot-nong-the-gioi-nam-2020-20201203173049527.htm"
+  title="Những cuộc xung đột &quot;đốt nóng&quot; thế giới năm 2020">
+  
+  Những cuộc xung đột &quot;đốt nóng&quot; thế giới năm 2020        <i class="news-title-icon ico-news-type-img"> </i>  
+  
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Box_DiemNong|1" class="news-item__sapo" title="Những cuộc xung đột &quot;đốt nóng&quot; thế giới năm 2020" href="/the-gioi/nhung-cuoc-xung-dot-dot-nong-the-gioi-nam-2020-20201203173049527.htm">(Dân trí)&nbsp;- Các cuộc xung đột năm 2020 không chỉ giới hạn trong phạm vi một nước, mà còn xảy ra giữa các quốc gia với căng thẳng leo thang.</a>
+                                             </div>
+    </div>
+
+                </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_DiemNong|2" title="Gần 2.900 binh sĩ Azerbaijan chết và mất tích trong xung đột với Armenia" href="/the-gioi/gan-2900-binh-si-azerbaijan-chet-va-mat-tich-trong-xung-dot-voi-armenia-20201203195359641.htm">
+                                    Gần 2.900 binh sĩ Azerbaijan chết và mất tích trong xung đột với Armenia
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_DiemNong|3" title="Châu Âu &quot;dậy sóng&quot; trước yêu sách phi lý của Trung Quốc ở Biển Đông" href="/the-gioi/chau-au-day-song-truoc-yeu-sach-phi-ly-cua-trung-quoc-o-bien-dong-20201202094038506.htm">
+                                    Châu Âu &quot;dậy sóng&quot; trước yêu sách phi lý của Trung Quốc ở Biển Đông
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_DiemNong|4" title="Báo Trung Quốc đe dọa các tàu chiến Australia ở Biển Đông" href="/the-gioi/bao-trung-quoc-de-doa-cac-tau-chien-australia-o-bien-dong-20201201220903291.htm">
+                                    Báo Trung Quốc đe dọa các tàu chiến Australia ở Biển Đông
+                                </a>
+                            </h3>
+                        </li>
+            </ul>
+        </div>
+    </section>
+            <div custom-cat-box-before-230></div>
+    <section data-cate-id="230" class="dt-section dt-section--box dt-section--primary ">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="Tư liệu" href="/the-gioi/tu-lieu.htm">
+                                        Tư liệu
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_TuLieu|1"
+ class="news-item__avatar"   href="/the-gioi/trump-dinh-tai-tranh-cu-nam-2024-dang-cong-hoa-roi-vao-the-tien-thoai-luong-nan-20201205070611777.htm"
+  title="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/12/05/trump-202416046922535741387029959-1607126693969.jpg" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/12/05/trump-202416046922535741387029959-1607126693969.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_TuLieu|1"
+  href="/the-gioi/trump-dinh-tai-tranh-cu-nam-2024-dang-cong-hoa-roi-vao-the-tien-thoai-luong-nan-20201205070611777.htm"
+  title="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;">
+  
+  Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Box_TuLieu|1" class="news-item__sapo" title="Trump định tái tranh cử năm 2024, đảng Cộng hòa rơi vào thế &quot;tiến thoái lưỡng nan&quot;" href="/the-gioi/trump-dinh-tai-tranh-cu-nam-2024-dang-cong-hoa-roi-vao-the-tien-thoai-luong-nan-20201205070611777.htm">Sự giận dữ ngày càng tăng của Tổng thống Trump đối với các đồng minh trong đảng đã khiến các thành viên đảng Cộng hòa lo lắng về viễn cảnh ông Trump tái tranh cử vào năm 2024.</a>
+                                             </div>
+    </div>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+            <div custom-cat-box-before-251></div>
+    <section data-cate-id="251" class="dt-section dt-section--box dt-section--primary ">
+        <header class="dt-section__header">
+            <h2 class="dt-section__title">
+                <a data-utm="" title="Kiều bào" href="/the-gioi/kieu-bao.htm">
+                                        Kiều bào
+                </a>
+            </h2>
+
+        </header>
+
+        <div class="dt-section__body">
+            <ul class="dt-list dt-list--sm">
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|Box_KieuBao|1"
+ class="news-item__avatar"   href="/the-gioi/tri-thuc-viet-kieu-hien-ke-de-viet-nam-tao-nen-ky-tich-phat-trien-20201130121157636.htm"
+  title="Tri thức Việt kiều hiến kế để Việt Nam tạo nên kỳ tích phát triển">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Tri thức Việt kiều hiến kế để Việt Nam tạo nên kỳ tích phát triển" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/528_352/2020/11/30/img-1260-1606712848579.jpeg" src="https://icdn.dantri.com.vn/zoom/528_352/filters:quality(0)/2020/11/30/img-1260-1606712848579.jpeg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|Box_KieuBao|1"
+  href="/the-gioi/tri-thuc-viet-kieu-hien-ke-de-viet-nam-tao-nen-ky-tich-phat-trien-20201130121157636.htm"
+  title="Tri thức Việt kiều hiến kế để Việt Nam tạo nên kỳ tích phát triển">
+  
+  Tri thức Việt kiều hiến kế để Việt Nam tạo nên kỳ tích phát triển    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                     <a data-utm="Cate_TheGioi|Box_KieuBao|1" class="news-item__sapo" title="Tri thức Việt kiều hiến kế để Việt Nam tạo nên kỳ tích phát triển" href="/the-gioi/tri-thuc-viet-kieu-hien-ke-de-viet-nam-tao-nen-ky-tich-phat-trien-20201130121157636.htm">(Dân trí)&nbsp;- Tiến sĩ Trần Hải Linh, một Việt kiều Hàn Quốc, đã đóng góp những ý tưởng và khuyến nghị cho văn kiện Đại hội Đảng lần thứ XIII với niềm tin Việt Nam sẽ tạo nên những kỳ tích trong tương lai.</a>
+                                             </div>
+    </div>
+
+                </li>
+                        <li class="news-item news-item--link">
+                            <h3 class="news-item__title">
+                                <a data-utm="Cate_TheGioi|Box_KieuBao|2" title="Những kiều bào nặng lòng với quê hương" href="/the-gioi/nhung-kieu-bao-nang-long-voi-que-huong-20201128101815219.htm">
+                                    Những kiều bào nặng lòng với quê hương
+                                </a>
+                            </h3>
+                        </li>
+            </ul>
+        </div>
+    </section>
+                    <div id="xds-102" ></div>
+
+      </div>  
+    
+                <div class="col col--secondary" id="xds-101" >
+  
+            </div>
+
+  </div>
+
+  <div id="adm_sticky_footer"></div>
+  <section class="dt-section dt-section--simple dt-section--large mt-5">
+      <header class="dt-section__header">
+          <h3 class="dt-section__title">
+              Đọc nhiều nhất chuyên mục
+          </h3>
+      </header>
+                 <div id="xds-107"></div>
+
+    <div class="dt-section__body">
+        <ul class="dt-list dt-list--eq-grid dt-list--grid-4">
+                            <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|1"
+ class="news-item__avatar"   href="/the-gioi/de-nhat-phu-nhan-melania-trump-pha-vo-im-lang-20201109065423883.htm"
+  title="Đệ nhất phu nhân Melania Trump phá vỡ im lặng">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Đệ nhất phu nhân Melania Trump phá vỡ im lặng" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/544_362/2020/11/09/trump-1604879998660.jpg" src="https://icdn.dantri.com.vn/zoom/544_362/filters:quality(0)/2020/11/09/trump-1604879998660.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|1"
+  href="/the-gioi/de-nhat-phu-nhan-melania-trump-pha-vo-im-lang-20201109065423883.htm"
+  title="Đệ nhất phu nhân Melania Trump phá vỡ im lặng">
+  
+  Đệ nhất phu nhân Melania Trump phá vỡ im lặng    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+                </li>
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|2"
+ class="news-item__avatar"   href="/the-gioi/hanh-dong-gay-thien-cam-cua-ong-trump-du-biet-tin-that-cu-20201108145414688.htm"
+  title="Hành động gây thiện cảm của ông Trump dù biết tin thất cử">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Hành động gây thiện cảm của ông Trump dù biết tin thất cử" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/544_362/2020/11/08/trump-1604821936475.jpg" src="https://icdn.dantri.com.vn/zoom/544_362/filters:quality(0)/2020/11/08/trump-1604821936475.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|2"
+  href="/the-gioi/hanh-dong-gay-thien-cam-cua-ong-trump-du-biet-tin-that-cu-20201108145414688.htm"
+  title="Hành động gây thiện cảm của ông Trump dù biết tin thất cử">
+  
+  Hành động gây thiện cảm của ông Trump dù biết tin thất cử        <i class="news-title-icon ico-news-type-video"> </i>  
+  
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+                </li>
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|3"
+ class="news-item__avatar"   href="/the-gioi/ong-trump-tung-chien-thuat-moi-cho-cuoc-chien-phap-ly-hau-bau-cu-20201110151748021.htm"
+  title="Ông Trump tung chiến thuật mới cho cuộc chiến pháp lý hậu bầu cử">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Ông Trump tung chiến thuật mới cho cuộc chiến pháp lý hậu bầu cử" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/544_362/2020/11/10/79499243-x-2940-x-627-1604995895672.jpg" src="https://icdn.dantri.com.vn/zoom/544_362/filters:quality(0)/2020/11/10/79499243-x-2940-x-627-1604995895672.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|3"
+  href="/the-gioi/ong-trump-tung-chien-thuat-moi-cho-cuoc-chien-phap-ly-hau-bau-cu-20201110151748021.htm"
+  title="Ông Trump tung chiến thuật mới cho cuộc chiến pháp lý hậu bầu cử">
+  
+  Ông Trump tung chiến thuật mới cho cuộc chiến pháp lý hậu bầu cử    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+                </li>
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|4"
+ class="news-item__avatar"   href="/the-gioi/bi-nha-trang-gay-kho-de-ong-biden-chua-duoc-tiep-can-bao-cao-mat-20201110081932157.htm"
+  title="Bị Nhà Trắng &quot;gây khó dễ&quot;, ông Biden chưa được tiếp cận báo cáo mật">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Bị Nhà Trắng &quot;gây khó dễ&quot;, ông Biden chưa được tiếp cận báo cáo mật" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/544_362/2020/11/08/my-26-1604769504874.jpg" src="https://icdn.dantri.com.vn/zoom/544_362/filters:quality(0)/2020/11/08/my-26-1604769504874.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|4"
+  href="/the-gioi/bi-nha-trang-gay-kho-de-ong-biden-chua-duoc-tiep-can-bao-cao-mat-20201110081932157.htm"
+  title="Bị Nhà Trắng &quot;gây khó dễ&quot;, ông Biden chưa được tiếp cận báo cáo mật">
+  
+  Bị Nhà Trắng &quot;gây khó dễ&quot;, ông Biden chưa được tiếp cận báo cáo mật    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                                                  </div>
+    </div>
+
+                </li>
+                <li>
+                    
+    <div class="news-item news-item--normal">
+        
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|5"
+ class="news-item__avatar"   href="/the-gioi/nguoi-phu-nu-quyen-luc-co-the-quyet-dinh-cuc-dien-bau-cu-my-hien-tai-20201109103134082.htm"
+  title="Người phụ nữ “quyền lực” có thể quyết định cục diện bầu cử Mỹ hiện tại">
+  
+  
+                        
+                        <div class="dt-thumbnail dt-thumbnail--3x2">
+                            <img alt="Người phụ nữ “quyền lực” có thể quyết định cục diện bầu cử Mỹ hiện tại" class=" no-img" lazy-src="https://icdn.dantri.com.vn/zoom/544_362/2020/11/09/20405700-1604892423277.jpg" src="https://icdn.dantri.com.vn/zoom/544_362/filters:quality(0)/2020/11/09/20405700-1604892423277.jpg">
+                        </div> 
+                        
+                         
+</a>
+
+
+          <div class="news-item__content">
+           
+
+            <h3 class='news-item__title'>
+                    
+
+
+<a  data-utm="Cate_TheGioi|DocNhieuNhatChuyenMuc|5"
+  href="/the-gioi/nguoi-phu-nu-quyen-luc-co-the-quyet-dinh-cuc-dien-bau-cu-my-hien-tai-20201109103134082.htm"
+  title="Người phụ nữ “quyền lực” có thể quyết định cục diện bầu cử Mỹ hiện tại">
+  
+  Người phụ nữ “quyền lực” có thể quyết định cục diện bầu cử Mỹ hiện tại    
+</a>
+
+
+  
+           
+            </h3>
+            
+                                 
